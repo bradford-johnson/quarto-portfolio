@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Bradford Johnson"
+  navbar:
+    right:
+      - text: "{{< fa address-card >}} About"
+        href: index.qmd
+      - visuals.qmd
+      - projects.qmd
+format:
+  html:
+    theme: sandstone
+    mainfont: Roboto
+    css: styles.css
+
+editor: visual
+

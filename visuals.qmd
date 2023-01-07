@@ -1,0 +1,15 @@
+---
+title: ""
+---
+
+::: column-page
+<center>
+
+# {{< fa chart-column >}} Visual Gallery
+
+</center>
+:::
+
+::: column-screen-inset
+<center>![](images/dynamic/buses.png){width="31%"} ![](images/dynamic/atl-burg-2021.png){width="31%"} ![](images/dynamic/daily-rfid-dist-v3.png){width="31%"}</center>
+:::
