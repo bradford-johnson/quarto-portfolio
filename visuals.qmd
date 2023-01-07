@@ -6,6 +6,7 @@ title: ""
 <center>
 
 # {{< fa chart-column >}} Visual Gallery
+*More coming soon!* {{< fa screwdriver-wrench >}}
 
 </center>
 :::
