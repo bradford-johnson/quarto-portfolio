@@ -10,6 +10,8 @@ website:
         href: index.qmd
       - visuals.qmd
       - projects.qmd
+  page-footer:
+    right: "This website is built with ❤️ and [Quarto](https://quarto.org/)."
 format:
   html:
     theme: sandstone
