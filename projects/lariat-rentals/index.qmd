@@ -1,7 +1,8 @@
 ---
 title: "Lariat Rentals"
 date: "09/05/2022"
-description: "Thinkful Capstone 1"
+description: "Data analysis and model creation for maximizing revenue and minimizing costs"
+categories: "Thinkful Capstone"
 image: "images/dynamic/lariat-logo.jpg"
 format: html
 editor: visual

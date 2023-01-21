@@ -1,7 +1,8 @@
 ---
 title: "Fuel Economy"
 date: "11/02/2022"
-description: "Thinkful Capstone 2"
+description: "Statistical analysis on factors that drive fuel cost and consumption"
+categories: "Thinkful Capstone"
 image: "images/dynamic/dawn-mcdonald-lBP2muAsD94-unsplash.jpg"
 format: html
 editor: visual

@@ -1,7 +1,8 @@
 ---
 title: "Vending Machine Sales"
 date: "12/10/2022"
-description: "Thinkful Capstone 3"
+description: "Analysis on trends among various vending machines and optimizing their stocking methods"
+categories: "Thinkful Capstone"
 image: "images/dynamic/nik-albert-pGQpBcylvOA-unsplash.jpg"
 format: html
 editor: visual
