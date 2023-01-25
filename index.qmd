@@ -13,8 +13,6 @@ about:
       href: "https://public.tableau.com/app/profile/bradfordjohnson"
     - text: '{{< fa envelope size=2x >}} Email'
       href: "mailto:bradfordljohnson@outlook.com"
-    - text: '{{< fa file size=2x >}} Resume'
-      href: "https://1drv.ms/w/s!Ahpkb3AfX4xfhPJRQc2BW6YTD7LXdg?e=fgDyiq"
 ---
 
 ::: column-page

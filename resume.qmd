@@ -1,0 +1,15 @@
+---
+title: ""
+---
+
+::: column-page
+<center>
+
+# {{< fa file-pdf size=2x >}} Resume
+
+</center>
+:::
+
+<iframe width="800" height="800" src="documents/bradford_johnson_resume.pdf">
+
+</iframe>
