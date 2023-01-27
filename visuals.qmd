@@ -17,7 +17,7 @@ title: ""
 
 <p>![](images/dynamic/alone.png){width="31%"} ![](images/dynamic/birds.png){width="31%"} ![](images/dynamic/art-history-v2.png){width="31%"}</p>
 
-<p>![](images/dynamic/buses.png){width="31%"} ![](images/dynamic/atl-burg-2021.png){width="31%"} ![](images/dynamic/daily-rfid-dist-v3.png){width="31%"}</p>
+<p>![](images/dynamic/buses.png){width="31%"} ![](images/dynamic/atl-burg-2021.png){width="31%"} ![](images/dynamic/rfid.png){width="31%"}</p>
 
 </center>
 :::
