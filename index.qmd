@@ -1,9 +1,11 @@
 ---
 title: "Bradford Johnson"
 subtitle: "Let's Connect"
-image: profile.jpg
+image: "images/static/headshot.jpg"
 about:
   template: trestles
+  image-width: 16em
+  image-shape: round
   links:
     - text: '{{< fa brands linkedin size=2x >}} LinkedIn'
       href: "https://www.linkedin.com/in/bradford-ford-johnson/"

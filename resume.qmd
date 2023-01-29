@@ -10,6 +10,6 @@ title: ""
 </center>
 :::
 
-<iframe width="800" height="800" src="documents/bradford_johnson_resume.pdf">
+<iframe width="850" height="850" src="documents/bradford_johnson_resume.pdf">
 
 </iframe>
