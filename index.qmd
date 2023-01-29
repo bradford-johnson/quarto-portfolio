@@ -1,6 +1,6 @@
 ---
 title: "Bradford Johnson"
-subtitle: "Let's Connect"
+subtitle: "{{< fa user-plus size=1x >}} Let's Connect"
 image: "images/static/headshot.jpg"
 about:
   template: trestles
@@ -50,4 +50,11 @@ Don't forget to check out my [Visual Gallery!](visuals.qmd)
 <p>
 
 </p>
+
+### {{< fa bookmark >}} **Interests**
+
+-   Hiking
+-   Photography
+-   Sociology
+-   Just about anything tech related
 :::
