@@ -15,7 +15,8 @@ website:
     right: "This website is built with ❤️ and [Quarto](https://quarto.org/)."
 format:
   html:
-    theme: sandstone
+    theme:
+      - sandstone.scss
     mainfont: Roboto
     css: styles.css
 
