@@ -55,6 +55,5 @@ Don't forget to check out my [Visual Gallery!](visuals.qmd)
 
 -   Hiking
 -   Photography
--   Sociology
--   Just about anything tech related
+-   [TidyTuesday!](https://github.com/rfordatascience/tidytuesday)
 :::
