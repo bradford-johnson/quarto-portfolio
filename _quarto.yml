@@ -12,7 +12,8 @@ website:
       - visuals.qmd
       - projects.qmd
   page-footer:
-    right: "This website is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: ""
+    right: "This website is built with ❤️ and [Quarto](https://quarto.org/){target=\"_blank\"}."
 format:
   html:
     theme:

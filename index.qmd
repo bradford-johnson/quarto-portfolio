@@ -55,5 +55,5 @@ Don't forget to check out my [Visual Gallery!](visuals.qmd)
 
 -   Hiking
 -   Photography
--   [TidyTuesday!](https://github.com/rfordatascience/tidytuesday){target="_blank"}
+-   [TidyTuesday!](https://github.com/rfordatascience/tidytuesday){target="_blank"} - A weekly social data project in R
 :::
