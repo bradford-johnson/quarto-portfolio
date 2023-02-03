@@ -4,7 +4,7 @@ subtitle: "{{< fa user-plus size=1x >}} Let's Connect"
 image: "images/static/headshot.jpg"
 about:
   template: trestles
-  image-width: 16em
+  image-width: 12em
   image-shape: round
   links:
     - text: '{{< fa brands linkedin size=2x >}} LinkedIn'
