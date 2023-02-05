@@ -13,9 +13,11 @@ title: ""
 ::: column-screen-inset
 <center>
 
-<p>[![](images/dynamic/cats.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-5/cats.R){target="_blank"} [![](images/dynamic/alone.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-4/alone.R){target="_blank"} [![](images/dynamic/art-history-v2.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-3/art-history.R){target="_blank"}</p>
+<p>[![](images/dynamic/stocks.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-6/stocks.R){target="_blank"} [![](images/dynamic/cats.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-5/cats.R){target="_blank"} [![](images/dynamic/alone.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-4/alone.R){target="_blank"}</p>
 
-<p>[![](images/dynamic/birds.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-2/birds.R){target="_blank"} [![](images/dynamic/rfid-v1.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-1/rfid.R){target="_blank"} [![](images/dynamic/atl-burg-2021.png){width="31%"}](https://github.com/bradfordjohnson/data-viz/tree/main/atlanta-crime-maps){target="_blank"}</p>
+<p>[![](images/dynamic/art-history-v2.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-3/art-history.R){target="_blank"} [![](images/dynamic/birds.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-2/birds.R){target="_blank"} [![](images/dynamic/rfid-v1.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-1/rfid.R){target="_blank"}</p>
+
+<p>[![](images/dynamic/atl-burg-2021.png){width="31%"}](https://github.com/bradfordjohnson/data-viz/tree/main/atlanta-crime-maps){target="_blank"}</p>
 
 </center>
 :::
