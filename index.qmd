@@ -15,6 +15,8 @@ about:
       href: "https://public.tableau.com/app/profile/bradfordjohnson"
     - text: '{{< fa envelope size=2x >}} Email'
       href: "mailto:bradfordljohnson@outlook.com"
+    - text: '{{< fa brands twitter size=2x >}} Twitter'
+      href: "https://twitter.com/bradfordj_"
 ---
 
 ::: column-page
