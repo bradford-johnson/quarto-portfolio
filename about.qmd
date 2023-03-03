@@ -1,0 +1,62 @@
+---
+title: "Bradford Johnson"
+about:
+  id: about-me
+  image: "images/static/headshot.jpg"
+  template: trestles
+  image-width: 12em
+  image-shape: round
+  links:
+    - text: "LinkedIn"
+      icon: linkedin
+      href: "https://www.linkedin.com/in/bradford-ford-johnson/"
+    - text: "GitHub"
+      icon: github
+      href: "https://github.com/bradfordjohnson"
+    - text: "Tableau"
+      icon: graph-up
+      href: "https://public.tableau.com/app/profile/bradfordjohnson"
+    - text: "Email"
+      icon: envelope
+      href: "mailto:bradfordljohnson@outlook.com"
+    - text: "Twitter"
+      icon: twitter
+      href: "https://twitter.com/bradfordj_"
+page-layout: full
+---
+
+*Welcome! I'm an explorer of many realms: data analytics, IT, and sociology. I'm a self-taught R programmer, and visualization designer.*
+
+*Also, I love dogs; Roxy🐕 & Ollie🐕.*
+
+::: panel-tabset
+# Specialties
+
+-   Data Visualization & Dashboard Development
+-   Data Cleaning & Statistical Analysis
+-   Report Generation & Data Story Telling
+
+# Skills
+
+|                    |                      |                 |
+|:-------------------|:---------------------|:----------------|
+| SQL                | R                    | Python          |
+| Excel              | Tableau              | Quarto          |
+| Web Scraping       | Statistical Analysis | Data Wrangling  |
+| Data Visualization | GitHub               | Research Design |
+
+# Hobbies
+
+-   👨‍💻 Programming
+-   🌳⛰️ Hiking
+-   📸 Photography
+-   🗓️ [TidyTuesday!](https://github.com/rfordatascience/tidytuesday) - A weekly social data project in R
+:::
+
+::: panel-tabset
+# Education
+
+**Data Analytics** \| Thinkful \| *2022*
+
+**B.A. Sociology** \| Winthrop University \| *2021*
+:::

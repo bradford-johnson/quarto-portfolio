@@ -1,25 +1,29 @@
 project:
   type: website
   output-dir: docs
-
 website:
   title: "Bradford Johnson"
   navbar:
+    pinned: true
     right:
-      - text: "{{< fa address-card size=2x >}} About"
+      - text: "Home"
         href: index.qmd
-      - resume.qmd
-      - visuals.qmd
-      - projects.qmd
+        icon: house
+      - href: projects.qmd
+        icon: folder2
+      - href: blog.qmd
+        icon: newspaper
+      - text: "About"
+        href: about.qmd
+        icon: file-person
   page-footer:
-    left: ""
+    left: "Created by [Bradford Johnson](https://github.com/bradfordjohnson) © 2023"
     right: "This website is built with ❤️ and [Quarto](https://quarto.org/){target=\"_blank\"}."
+smooth-scroll: true
 format:
   html:
-    theme:
-      - sandstone.scss
+    link-external-newwindow: true
+    theme: [simplex] # removed scss file for now
     mainfont: Roboto
     css: styles.css
-
 editor: visual
-

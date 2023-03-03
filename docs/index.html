@@ -24,12 +24,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -59,12 +60,71 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-landing-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-landing-posts'] = new List('listing-landing-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-landing-posts-blog .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-landing-posts-blog'] = new List('listing-landing-posts-blog', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,20 +141,24 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
- <span class="menu-text"><i class="fa-solid fa-address-card fa-2x" aria-label="address-card"></i> About</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html">
- <span class="menu-text"><i class="fa-solid fa-file-pdf fa-2x" aria-label="file-pdf"></i> Resume</span></a>
+    <a class="nav-link" href="./projects.html"><i class="bi bi-folder2" role="img">
+</i> 
+ <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./visuals.html">
- <span class="menu-text"><i class="fa-solid fa-chart-column fa-2x" aria-label="chart-column"></i> Visual Gallery</span></a>
+    <a class="nav-link" href="./blog.html"><i class="bi bi-newspaper" role="img">
+</i> 
+ <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html">
- <span class="menu-text"><i class="fa-solid fa-folder-open fa-2x" aria-label="folder-open"></i> Projects</span></a>
+    <a class="nav-link" href="./about.html"><i class="bi bi-file-person" role="img">
+</i> 
+ <span class="menu-text">About</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -103,98 +167,208 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles page-columns page-full">
-  <div class="about-entity">
-    <img src="images/static/headshot.jpg" class="about-image
+<main class="content column-page" id="quarto-document-content">
+
+
+
+<div class="quarto-about-jolla column-page">
+  <img src="images/static/headshot.jpg" class="about-image
   round " style="height: 12em; width: 12em;">
-<header id="title-block-header" class="quarto-title-block default">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Bradford Johnson</h1>
-<p class="subtitle lead"><i class="fa-solid fa-user-plus fa-1x" aria-label="user-plus"></i> Let’s Connect</p>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header>
-    <div class="about-links">
+</header><div id="about-me">
+<center>
+<strong>Data Analyst</strong>
+</center>
+<div class="callout-important callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Interested in connecting or talking data? Use the buttons below to contact me!</p>
+</div>
+</div>
+</div>
+</div> 
+  <hr class="about-sep">
+   <div class="about-links">
   <a href="https://www.linkedin.com/in/bradford-ford-johnson/" class="about-link">
-     <span class="about-link-text"><i class="fa-brands fa-linkedin fa-2x" aria-label="linkedin"></i> LinkedIn</span>
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
   </a>
   <a href="https://github.com/bradfordjohnson" class="about-link">
-     <span class="about-link-text"><i class="fa-brands fa-github fa-2x" aria-label="github"></i> Github</span>
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">GitHub</span>
   </a>
   <a href="https://public.tableau.com/app/profile/bradfordjohnson" class="about-link">
-     <span class="about-link-text"><i class="fa-solid fa-chart-line fa-2x" aria-label="chart-line"></i> Tableau</span>
+    <i class="bi bi-graph-up"></i>
+     <span class="about-link-text">Tableau</span>
   </a>
   <a href="mailto:bradfordljohnson@outlook.com" class="about-link">
-     <span class="about-link-text"><i class="fa-solid fa-envelope fa-2x" aria-label="envelope"></i> Email</span>
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text">Email</span>
   </a>
   <a href="https://twitter.com/bradfordj_" class="about-link">
-     <span class="about-link-text"><i class="fa-brands fa-twitter fa-2x" aria-label="twitter"></i> Twitter</span>
+    <i class="bi bi-twitter"></i>
+     <span class="about-link-text">Twitter</span>
   </a>
 </div>
-  </div>
-  <div class="about-contents page-columns page-full"><main class="content page-columns page-full" id="quarto-document-content">
-<div class="column-page">
-<p>I’m a <strong>data analyst</strong> who specializes in:</p>
-<ul>
-<li><p>Data Visualization &amp; Dashboard Development</p></li>
-<li><p>Data Cleaning &amp; Statistical Analysis</p></li>
-<li><p>Report Generation &amp; Data Story Telling</p></li>
-</ul>
-<p>
-</p>
-<p>Don’t forget to check out my <a href="./visuals.html">Visual Gallery!</a></p>
-<p><br></p>
-<section id="fa-gear-skills" class="level3">
-<h3 data-anchor-id="fa-gear-skills"><i class="fa-solid fa-gear" aria-label="gear"></i> <strong>Skills</strong></h3>
-<p>
-</p>
-<table class="table">
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">SQL</td>
-<td style="text-align: left;">R</td>
-<td style="text-align: left;">Python</td>
+</div>
+
+<div class="grid">
+<section id="projects" class="level2 g-col-12 g-col-md-6">
+<h2 data-anchor-id="projects">Projects</h2>
+<p>Click <a href="./projects.html">here</a> to check out my latest projects.</p>
+<div id="listing-landing-posts" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Thinkful Capstone" data-listing-date-sort="1670648400000" data-listing-file-modified-sort="1674338935667" data-listing-reading-time-sort="4.35">
+<div class="thumbnail">
+<p><a href="./projects/vending-machines/index.html"> <img src="./projects/vending-machines/images/dynamic/nik-albert-pGQpBcylvOA-unsplash.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./projects/vending-machines/index.html">
+<h3 class="no-anchor listing-title">
+Vending Machine Sales
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Analysis on trends among various vending machines and optimizing their stocking methods</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./projects/vending-machines/index.html">
+<div class="listing-date">
+Dec 10, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Thinkful Capstone" data-listing-date-sort="1667361600000" data-listing-file-modified-sort="1674338950923" data-listing-reading-time-sort="3.04">
+<div class="thumbnail">
+<p><a href="./projects/fuel-economy/index.html"> <img src="./projects/fuel-economy/images/dynamic/dawn-mcdonald-lBP2muAsD94-unsplash.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./projects/fuel-economy/index.html">
+<h3 class="no-anchor listing-title">
+Fuel Economy
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Statistical analysis on factors that drive fuel cost and consumption</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./projects/fuel-economy/index.html">
+<div class="listing-date">
+Nov 2, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Thinkful Capstone" data-listing-date-sort="1662350400000" data-listing-file-modified-sort="1674338960410" data-listing-reading-time-sort="2.23">
+<div class="thumbnail">
+<p><a href="./projects/lariat-rentals/index.html"> <img src="./projects/lariat-rentals/images/dynamic/lariat-logo.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./projects/lariat-rentals/index.html">
+<h3 class="no-anchor listing-title">
+Lariat Rentals
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Data analysis and model creation for maximizing revenue and minimizing costs</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./projects/lariat-rentals/index.html">
+<div class="listing-date">
+Sep 5, 2022
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="blog" class="level2 g-col-12 g-col-md-6">
+<h2 data-anchor-id="blog">Blog</h2>
+<p>Click <a href="./blog.html">here</a> see my latest blog posts.</p>
+<div id="listing-landing-posts-blog" class="quarto-listing quarto-listing-container-table">
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Excel</td>
-<td style="text-align: left;">Tableau</td>
-<td style="text-align: left;">Quarto</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Web Scraping</td>
-<td style="text-align: left;">Statistical Analysis</td>
-<td style="text-align: left;">Data Wrangling</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Data Visualization</td>
-<td style="text-align: left;">Documentation</td>
-<td style="text-align: left;">Research Design</td>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="About" data-listing-date-sort="1677819600000" data-listing-file-modified-sort="1677842998615" data-listing-reading-time-sort="0.705" data-listing-title-sort="Blog Introduction" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
+Mar 3, 2023
+</td>
+<td class="listing-title">
+<a href="./blog/01-blog-intro/index.html" class="title">Blog Introduction</a>
+</td>
 </tr>
 </tbody>
+
 </table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+</div>
+<div>
+<center>
+<section id="fa-chart-column-visual-gallery" class="level2">
+<h2 data-anchor-id="fa-chart-column-visual-gallery"><i class="fa-solid fa-chart-column" aria-label="chart-column"></i> Visual Gallery</h2>
+<p><em>Click on an image to view the <code>source code</code>!</em></p>
 <p>
+<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-9/african-languages.R"><img src="images/dynamic/african-languages.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-8/bob-ross.R"><img src="images/dynamic/bob-ross.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-7/age-gaps.R"><img src="images/dynamic/age-gaps.png" class="img-fluid" style="width:31.0%"></a>
 </p>
-</section>
-<section id="fa-bookmark-interests" class="level3">
-<h3 data-anchor-id="fa-bookmark-interests"><i class="fa-solid fa-bookmark" aria-label="bookmark"></i> <strong>Interests</strong></h3>
-<ul>
-<li>Hiking</li>
-<li>Photography</li>
-<li><a href="https://github.com/rfordatascience/tidytuesday" target="_blank">TidyTuesday!</a> - A weekly social data project in R</li>
-</ul>
-</section>
+<p>
+<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-6/stocks.R"><img src="images/dynamic/stocks.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-5/cats.R"><img src="images/dynamic/cats.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-4/alone.R"><img src="images/dynamic/alone.png" class="img-fluid" style="width:31.0%"></a>
+</p>
+<p>
+<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-3/art-history.R"><img src="images/dynamic/art-history-v2.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-2/birds.R"><img src="images/dynamic/birds.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-1/rfid.R"><img src="images/dynamic/rfid-v1.png" class="img-fluid" style="width:31.0%"></a>
+</p>
+</section></center>
+
 </div>
 
 
-</main></div>
-</div>
- <!-- /main -->
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -319,15 +493,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
+    <div class="nav-footer-left">Created by <a href="https://github.com/bradfordjohnson">Bradford Johnson</a> © 2023</div>   
     <div class="nav-footer-right">This website is built with ❤️ and <a href="https://quarto.org/" target="_blank">Quarto</a>.</div>
   </div>
 </footer>
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

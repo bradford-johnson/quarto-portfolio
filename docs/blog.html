@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bradford Johnson - Projects</title>
+<title>Bradford Johnson - Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,9 +69,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-description','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -117,12 +117,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"><i class="bi bi-folder2" role="img">
+    <a class="nav-link" href="./projects.html"><i class="bi bi-folder2" role="img">
 </i> 
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"><i class="bi bi-newspaper" role="img">
+    <a class="nav-link active" href="./blog.html" aria-current="page"><i class="bi bi-newspaper" role="img">
 </i> 
  <span class="menu-text">Blog</span></a>
   </li>  
@@ -143,13 +143,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Thinkful Capstone">Thinkful Capstone <span class="quarto-category-count">(3)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="About">About <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">Blog</h1>
 </div>
 
 
@@ -168,105 +168,44 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Thinkful Capstone" data-listing-date-sort="1670648400000" data-listing-file-modified-sort="1674338935667" data-listing-reading-time-sort="4.35">
-<div class="thumbnail">
-<p><a href="./projects/vending-machines/index.html"> <img src="./projects/vending-machines/images/dynamic/nik-albert-pGQpBcylvOA-unsplash.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./projects/vending-machines/index.html">
-<h3 class="no-anchor listing-title">
-Vending Machine Sales
-</h3>
-<div class="listing-subtitle">
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Thinkful Capstone'); return false;">
-Thinkful Capstone
-</div>
-</div>
-<a href="./projects/vending-machines/index.html">
-<div class="listing-description">
-<p>Analysis on trends among various vending machines and optimizing their stocking methods</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./projects/vending-machines/index.html">
-<div class="listing-date">
-Dec 10, 2022
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Thinkful Capstone" data-listing-date-sort="1667361600000" data-listing-file-modified-sort="1674338950923" data-listing-reading-time-sort="3.04">
-<div class="thumbnail">
-<p><a href="./projects/fuel-economy/index.html"> <img src="./projects/fuel-economy/images/dynamic/dawn-mcdonald-lBP2muAsD94-unsplash.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./projects/fuel-economy/index.html">
-<h3 class="no-anchor listing-title">
-Fuel Economy
-</h3>
-<div class="listing-subtitle">
+<table class="quarto-listing-table table table-hover">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Description
+</th>
+<th>
+Reading Time
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="About" data-listing-date-sort="1677819600000" data-listing-file-modified-sort="1677842998615" data-listing-reading-time-sort="0.705" data-listing-title-sort="Blog Introduction" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td class="listing-date">
+Mar 3, 2023
+</td>
+<td class="listing-title">
+<a href="./blog/01-blog-intro/index.html" class="title">Blog Introduction</a>
+</td>
+<td class="listing-description">
+First blog post! Blog objectives, and future content.
+</td>
+<td class="listing-reading-time">
+0 min
+</td>
+</tr>
+</tbody>
 
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Thinkful Capstone'); return false;">
-Thinkful Capstone
-</div>
-</div>
-<a href="./projects/fuel-economy/index.html">
-<div class="listing-description">
-<p>Statistical analysis on factors that drive fuel cost and consumption</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./projects/fuel-economy/index.html">
-<div class="listing-date">
-Nov 2, 2022
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Thinkful Capstone" data-listing-date-sort="1662350400000" data-listing-file-modified-sort="1674338960410" data-listing-reading-time-sort="2.23">
-<div class="thumbnail">
-<p><a href="./projects/lariat-rentals/index.html"> <img src="./projects/lariat-rentals/images/dynamic/lariat-logo.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./projects/lariat-rentals/index.html">
-<h3 class="no-anchor listing-title">
-Lariat Rentals
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Thinkful Capstone'); return false;">
-Thinkful Capstone
-</div>
-</div>
-<a href="./projects/lariat-rentals/index.html">
-<div class="listing-description">
-<p>Data analysis and model creation for maximizing revenue and minimizing costs</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./projects/lariat-rentals/index.html">
-<div class="listing-date">
-Sep 5, 2022
-</div>
-</a>
-</div>
-</div>
-</div>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

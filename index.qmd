@@ -1,61 +1,88 @@
 ---
 title: "Bradford Johnson"
-subtitle: "{{< fa user-plus size=1x >}} Let's Connect"
+page-layout: full
+listing: 
+  - id: landing-posts
+    contents: projects
+    type: default
+    max-items: 3
+    sort:
+      - "date desc"
+  - id: landing-posts-blog
+    contents: blog
+    type: table
+    max-items: 6
+    fields: [date, title]
+    filter-ui: false
+    sort-ui: false
+    sort:
+      - "date desc"
 image: "images/static/headshot.jpg"
 about:
-  template: trestles
+  id: about-me
+  template: jolla
   image-width: 12em
   image-shape: round
   links:
-    - text: '{{< fa brands linkedin size=2x >}} LinkedIn'
+    - text: "LinkedIn"
+      icon: linkedin
       href: "https://www.linkedin.com/in/bradford-ford-johnson/"
-    - text: '{{< fa brands github size=2x >}} Github'
+    - text: "GitHub"
+      icon: github
       href: "https://github.com/bradfordjohnson"
-    - text: '{{< fa chart-line size=2x >}} Tableau'
+    - text: "Tableau"
+      icon: graph-up
       href: "https://public.tableau.com/app/profile/bradfordjohnson"
-    - text: '{{< fa envelope size=2x >}} Email'
+    - text: "Email"
+      icon: envelope
       href: "mailto:bradfordljohnson@outlook.com"
-    - text: '{{< fa brands twitter size=2x >}} Twitter'
+    - text: "Twitter"
+      icon: twitter
       href: "https://twitter.com/bradfordj_"
 ---
 
-::: column-page
-I'm a **data analyst** who specializes in:
+::: {#about-me}
+<center>**Data Analyst**</center>
 
--   Data Visualization & Dashboard Development
-
--   Data Cleaning & Statistical Analysis
-
--   Report Generation & Data Story Telling
-
-<p>
-
-</p>
-
-Don't forget to check out my [Visual Gallery!](visuals.qmd)
-
-<br>
-
-### {{< fa gear >}} **Skills**
-
-<p>
-
-</p>
-
-|                    |                      |                 |
-|:-------------------|:---------------------|:----------------|
-| SQL                | R                    | Python          |
-| Excel              | Tableau              | Quarto          |
-| Web Scraping       | Statistical Analysis | Data Wrangling  |
-| Data Visualization | Documentation        | Research Design |
-
-<p>
-
-</p>
-
-### {{< fa bookmark >}} **Interests**
-
--   Hiking
--   Photography
--   [TidyTuesday!](https://github.com/rfordatascience/tidytuesday){target="_blank"} - A weekly social data project in R
+::: {.callout-important appearance="minimal"}
+Interested in connecting or talking data? Use the buttons below to contact me!
 :::
+:::
+
+::: grid
+::: {.g-col-12 .g-col-md-6}
+## Projects
+
+Click [here](projects.qmd) to check out my latest projects.
+
+::: {#landing-posts}
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+## Blog
+
+Click [here](blog.qmd) see my latest blog posts.
+
+::: {#landing-posts-blog}
+:::
+:::
+:::
+
+<div>
+
+<center>
+
+## {{< fa chart-column >}} Visual Gallery
+
+*Click on an image to view the `source code`!*
+
+<p>[![](images/dynamic/african-languages.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-9/african-languages.R) [![](images/dynamic/bob-ross.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-8/bob-ross.R) [![](images/dynamic/age-gaps.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-7/age-gaps.R)</p>
+
+<p>[![](images/dynamic/stocks.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-6/stocks.R) [![](images/dynamic/cats.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-5/cats.R) [![](images/dynamic/alone.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-4/alone.R)</p>
+
+<p>[![](images/dynamic/art-history-v2.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-3/art-history.R) [![](images/dynamic/birds.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-2/birds.R) [![](images/dynamic/rfid-v1.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-1/rfid.R)</p>
+
+</center>
+
+</div>

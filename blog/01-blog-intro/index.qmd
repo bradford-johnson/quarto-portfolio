@@ -1,0 +1,30 @@
+---
+title: "Blog Introduction"
+date: "3/03/2023"
+description: "First blog post! Blog objectives, and future content."
+categories: "About"
+format: html
+editor: visual
+---
+
+## Welcome!
+
+Greetings to my blog and first post here! I will keep this post brief as it is an introductory post, but I will be highlighting some of my objectives for this blog in addition to the types of content I anticipate sharing here.
+
+## Objectives
+
+There are two main functions this blog will serve, although naturally it will serve latent functions.
+
+-   **Share my experiences**
+
+-   **"Logging" these experiences and reflecting on them**
+
+## Future Content
+
+What kinds of content will be shared here? Mainly data analytics but there may be other resources or topics that naturally come up with time.
+
+-   **Code and data:** collecting, cleaning, analyzing and visualizing data
+
+-   **Current work and topics:** automating with GitHub Actions, `R` and `Python` notebooks, `SQL` discussions, etc.
+
+-   **New things I come across and find helpful:** resources, tutorials, packages, etc.

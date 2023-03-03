@@ -1,10 +1,66 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Bradford Johnson",
+    "section": "",
+    "text": "Welcome! I’m an explorer of many realms: data analytics, IT, and sociology. I’m a self-taught R programmer, and visualization designer.\nAlso, I love dogs; Roxy🐕 & Ollie🐕.\n\nSpecialtiesSkillsHobbies\n\n\n\nData Visualization & Dashboard Development\nData Cleaning & Statistical Analysis\nReport Generation & Data Story Telling\n\n\n\n\n\n\nSQL\nR\nPython\n\n\nExcel\nTableau\nQuarto\n\n\nWeb Scraping\nStatistical Analysis\nData Wrangling\n\n\nData Visualization\nGitHub\nResearch Design\n\n\n\n\n\n\n👨‍💻 Programming\n🌳⛰️ Hiking\n📸 Photography\n🗓️ TidyTuesday! - A weekly social data project in R\n\n\n\n\n\nEducation\n\n\nData Analytics | Thinkful | 2022\nB.A. Sociology | Winthrop University | 2021"
+  },
+  {
+    "objectID": "blog/01-blog-intro/index.html",
+    "href": "blog/01-blog-intro/index.html",
+    "title": "Blog Introduction",
+    "section": "",
+    "text": "Greetings to my blog and first post here! I will keep this post brief as it is an introductory post, but I will be highlighting some of my objectives for this blog in addition to the types of content I anticipate sharing here."
+  },
+  {
+    "objectID": "blog/01-blog-intro/index.html#objectives",
+    "href": "blog/01-blog-intro/index.html#objectives",
+    "title": "Blog Introduction",
+    "section": "Objectives",
+    "text": "Objectives\nThere are two main functions this blog will serve, although naturally it will serve latent functions.\n\nShare my experiences\n“Logging” these experiences and reflecting on them"
+  },
+  {
+    "objectID": "blog/01-blog-intro/index.html#future-content",
+    "href": "blog/01-blog-intro/index.html#future-content",
+    "title": "Blog Introduction",
+    "section": "Future Content",
+    "text": "Future Content\nWhat kinds of content will be shared here? Mainly data analytics but there may be other resources or topics that naturally come up with time.\n\nCode and data: collecting, cleaning, analyzing and visualizing data\nCurrent work and topics: automating with GitHub Actions, R and Python notebooks, SQL discussions, etc.\nNew things I come across and find helpful: resources, tutorials, packages, etc."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\nDescription\n\n\nReading Time\n\n\n\n\n\n\nMar 3, 2023\n\n\nBlog Introduction\n\n\nFirst blog post! Blog objectives, and future content.\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Bradford Johnson",
     "section": "",
-    "text": "I’m a data analyst who specializes in:\n\nData Visualization & Dashboard Development\nData Cleaning & Statistical Analysis\nReport Generation & Data Story Telling\n\n\n\nDon’t forget to check out my Visual Gallery!\n\n\n Skills\n\n\n\n\n\nSQL\nR\nPython\n\n\nExcel\nTableau\nQuarto\n\n\nWeb Scraping\nStatistical Analysis\nData Wrangling\n\n\nData Visualization\nDocumentation\nResearch Design\n\n\n\n\n\n\n\n Interests\n\nHiking\nPhotography\nTidyTuesday! - A weekly social data project in R"
+    "text": "Data Analyst\n\n\n\n\n\n\n\nInterested in connecting or talking data? Use the buttons below to contact me!\n\n\n\n \n  \n   \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     Tableau\n  \n  \n    \n     Email\n  \n  \n    \n     Twitter"
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Bradford Johnson",
+    "section": "Projects",
+    "text": "Projects\nClick here to check out my latest projects.\n\n\n\n\n  \n\n\n\n\nVending Machine Sales\n\n\n\n\n\nAnalysis on trends among various vending machines and optimizing their stocking methods\n\n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n  \n\n\n\n\nFuel Economy\n\n\n\n\n\nStatistical analysis on factors that drive fuel cost and consumption\n\n\n\n\n\n\nNov 2, 2022\n\n\n\n\n\n\n  \n\n\n\n\nLariat Rentals\n\n\n\n\n\nData analysis and model creation for maximizing revenue and minimizing costs\n\n\n\n\n\n\nSep 5, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#blog",
+    "href": "index.html#blog",
+    "title": "Bradford Johnson",
+    "section": "Blog",
+    "text": "Blog\nClick here see my latest blog posts.\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\nMar 3, 2023\n\n\nBlog Introduction\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#fa-chart-column-visual-gallery",
+    "href": "index.html#fa-chart-column-visual-gallery",
+    "title": "Bradford Johnson",
+    "section": " Visual Gallery",
+    "text": "Visual Gallery\nClick on an image to view the source code!"
   },
   {
     "objectID": "projects/fuel-economy/index.html",
@@ -51,22 +107,8 @@
   {
     "objectID": "projects.html",
     "href": "projects.html",
-    "title": "Bradford Johnson",
+    "title": "Projects",
     "section": "",
-    "text": "Projects\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nVending Machine Sales\n\n\n\n\n\n\n\nThinkful Capstone\n\n\n\n\nAnalysis on trends among various vending machines and optimizing their stocking methods\n\n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n  \n\n\n\n\nFuel Economy\n\n\n\n\n\n\n\nThinkful Capstone\n\n\n\n\nStatistical analysis on factors that drive fuel cost and consumption\n\n\n\n\n\n\nNov 2, 2022\n\n\n\n\n\n\n  \n\n\n\n\nLariat Rentals\n\n\n\n\n\n\n\nThinkful Capstone\n\n\n\n\nData analysis and model creation for maximizing revenue and minimizing costs\n\n\n\n\n\n\nSep 5, 2022\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Bradford Johnson",
-    "section": "",
-    "text": "Resume"
-  },
-  {
-    "objectID": "visuals.html",
-    "href": "visuals.html",
-    "title": "Bradford Johnson",
-    "section": "",
-    "text": "Visual Gallery"
+    "text": "Vending Machine Sales\n\n\n\n\n\n\n\nThinkful Capstone\n\n\n\n\nAnalysis on trends among various vending machines and optimizing their stocking methods\n\n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n  \n\n\n\n\nFuel Economy\n\n\n\n\n\n\n\nThinkful Capstone\n\n\n\n\nStatistical analysis on factors that drive fuel cost and consumption\n\n\n\n\n\n\nNov 2, 2022\n\n\n\n\n\n\n  \n\n\n\n\nLariat Rentals\n\n\n\n\n\n\n\nThinkful Capstone\n\n\n\n\nData analysis and model creation for maximizing revenue and minimizing costs\n\n\n\n\n\n\nSep 5, 2022\n\n\n\n\n\n\nNo matching items"
   }
 ]
