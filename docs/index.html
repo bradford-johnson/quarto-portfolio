@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -92,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-landing-posts2 .list');
+    const listingTargetEl = window.document.querySelector('#listing-landing-posts-blog .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -105,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-landing-posts2'] = new List('listing-landing-posts2', options);
+    window['quarto-listings']['listing-landing-posts-blog'] = new List('listing-landing-posts-blog', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -118,6 +117,7 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
@@ -141,16 +141,24 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
- <span class="menu-text"><i class="fa-solid fa-address-card fa-2x" aria-label="address-card"></i> About</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html">
- <span class="menu-text"><i class="fa-solid fa-file-pdf fa-2x" aria-label="file-pdf"></i> Resume</span></a>
+    <a class="nav-link" href="./projects.html"><i class="bi bi-folder2" role="img">
+</i> 
+ <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html">
- <span class="menu-text"><i class="fa-solid fa-folder-open fa-2x" aria-label="folder-open"></i> Projects</span></a>
+    <a class="nav-link" href="./blog.html"><i class="bi bi-newspaper" role="img">
+</i> 
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"><i class="bi bi-file-person" role="img">
+</i> 
+ <span class="menu-text">About</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -178,24 +186,29 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
   </div>
 </header><div id="about-me">
-<p>I’m a <strong>data analyst</strong></p>
+<p>Data Analyst</p>
 </div> 
   <hr class="about-sep">
    <div class="about-links">
   <a href="https://www.linkedin.com/in/bradford-ford-johnson/" class="about-link">
-     <span class="about-link-text"><i class="fa-brands fa-linkedin fa-2x" aria-label="linkedin"></i> LinkedIn</span>
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
   </a>
   <a href="https://github.com/bradfordjohnson" class="about-link">
-     <span class="about-link-text"><i class="fa-brands fa-github fa-2x" aria-label="github"></i> Github</span>
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">GitHub</span>
   </a>
   <a href="https://public.tableau.com/app/profile/bradfordjohnson" class="about-link">
-     <span class="about-link-text"><i class="fa-solid fa-chart-line fa-2x" aria-label="chart-line"></i> Tableau</span>
+    <i class="bi bi-graph-up"></i>
+     <span class="about-link-text">Tableau</span>
   </a>
   <a href="mailto:bradfordljohnson@outlook.com" class="about-link">
-     <span class="about-link-text"><i class="fa-solid fa-envelope fa-2x" aria-label="envelope"></i> Email</span>
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text">Email</span>
   </a>
   <a href="https://twitter.com/bradfordj_" class="about-link">
-     <span class="about-link-text"><i class="fa-brands fa-twitter fa-2x" aria-label="twitter"></i> Twitter</span>
+    <i class="bi bi-twitter"></i>
+     <span class="about-link-text">Twitter</span>
   </a>
 </div>
 </div>
@@ -203,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="grid">
 <section id="projects" class="level2 g-col-12 g-col-md-6">
 <h2 data-anchor-id="projects">Projects</h2>
-<p>Click <a href="./index.html">here</a> to check out the latest on the ForBlog.</p>
+<p>Click <a href="./projects.html">here</a> to check out my latest projects.</p>
 <div id="listing-landing-posts" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-categories="Thinkful Capstone" data-listing-date-sort="1670648400000" data-listing-file-modified-sort="1674338935667" data-listing-reading-time-sort="4.35">
@@ -289,8 +302,8 @@ No matching items
 </section>
 <section id="blog" class="level2 g-col-12 g-col-md-6">
 <h2 data-anchor-id="blog">Blog</h2>
-<p>Click <a href="./index.html">here</a> to play more in the playground.</p>
-<div id="listing-landing-posts2" class="quarto-listing quarto-listing-container-table">
+<p>Click <a href="./blog.html">here</a> see my latest blog posts.</p>
+<div id="listing-landing-posts-blog" class="quarto-listing quarto-listing-container-table">
 
 <table class="quarto-listing-table table">
 <thead>
@@ -304,28 +317,12 @@ Title
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="Thinkful Capstone" data-listing-date-sort="1670648400000" data-listing-file-modified-sort="1674338935667" data-listing-reading-time-sort="4.35" data-listing-title-sort="Vending Machine Sales" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-listing-date-sort="1677733200000" data-listing-file-modified-sort="1677813005967" data-listing-reading-time-sort="0.005" data-listing-title-sort="First Blog Post" data-listing-filename-sort="index.qmd">
 <td class="listing-date">
-Dec 10, 2022
+Mar 2, 2023
 </td>
 <td class="listing-title">
-<a href="./projects/vending-machines/index.html" class="title">Vending Machine Sales</a>
-</td>
-</tr>
-<tr data-index="1" data-categories="Thinkful Capstone" data-listing-date-sort="1667361600000" data-listing-file-modified-sort="1674338950923" data-listing-reading-time-sort="3.04" data-listing-title-sort="Fuel Economy" data-listing-filename-sort="index.qmd">
-<td class="listing-date">
-Nov 2, 2022
-</td>
-<td class="listing-title">
-<a href="./projects/fuel-economy/index.html" class="title">Fuel Economy</a>
-</td>
-</tr>
-<tr data-index="2" data-categories="Thinkful Capstone" data-listing-date-sort="1662350400000" data-listing-file-modified-sort="1674338960410" data-listing-reading-time-sort="2.23" data-listing-title-sort="Lariat Rentals" data-listing-filename-sort="index.qmd">
-<td class="listing-date">
-Sep 5, 2022
-</td>
-<td class="listing-title">
-<a href="./projects/lariat-rentals/index.html" class="title">Lariat Rentals</a>
+<a href="./blog/first-post/index.html" class="title">First Blog Post</a>
 </td>
 </tr>
 </tbody>
@@ -339,17 +336,17 @@ No matching items
 </div>
 <div>
 <center>
-<section id="fa-chart-column-size2x-visual-gallery" class="level2">
-<h2 data-anchor-id="fa-chart-column-size2x-visual-gallery"><i class="fa-solid fa-chart-column fa-2x" aria-label="chart-column"></i> Visual Gallery</h2>
-<p>click on an image to view the code!</p>
+<section id="fa-chart-column-visual-gallery" class="level2">
+<h2 data-anchor-id="fa-chart-column-visual-gallery"><i class="fa-solid fa-chart-column" aria-label="chart-column"></i> Visual Gallery</h2>
+<p><em>Click on an image to view the <code>code</code>!</em></p>
 <p>
-<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-9/african-languages.R" target="_blank"><img src="images/dynamic/african-languages.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-8/bob-ross.R" target="_blank"><img src="images/dynamic/bob-ross.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-7/age-gaps.R" target="_blank"><img src="images/dynamic/age-gaps.png" class="img-fluid" style="width:31.0%"></a>
+<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-9/african-languages.R"><img src="images/dynamic/african-languages.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-8/bob-ross.R"><img src="images/dynamic/bob-ross.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-7/age-gaps.R"><img src="images/dynamic/age-gaps.png" class="img-fluid" style="width:31.0%"></a>
 </p>
 <p>
-<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-6/stocks.R" target="_blank"><img src="images/dynamic/stocks.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-5/cats.R" target="_blank"><img src="images/dynamic/cats.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-4/alone.R" target="_blank"><img src="images/dynamic/alone.png" class="img-fluid" style="width:31.0%"></a>
+<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-6/stocks.R"><img src="images/dynamic/stocks.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-5/cats.R"><img src="images/dynamic/cats.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-4/alone.R"><img src="images/dynamic/alone.png" class="img-fluid" style="width:31.0%"></a>
 </p>
 <p>
-<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-3/art-history.R" target="_blank"><img src="images/dynamic/art-history-v2.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-2/birds.R" target="_blank"><img src="images/dynamic/birds.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-1/rfid.R" target="_blank"><img src="images/dynamic/rfid-v1.png" class="img-fluid" style="width:31.0%"></a>
+<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-3/art-history.R"><img src="images/dynamic/art-history-v2.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-2/birds.R"><img src="images/dynamic/birds.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-1/rfid.R"><img src="images/dynamic/rfid-v1.png" class="img-fluid" style="width:31.0%"></a>
 </p>
 </section></center>
 
@@ -484,15 +481,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
+    <div class="nav-footer-left">Created by <a href="https://github.com/bradfordjohnson">Bradford Johnson</a> © 2023</div>   
     <div class="nav-footer-right">This website is built with ❤️ and <a href="https://quarto.org/" target="_blank">Quarto</a>.</div>
   </div>
 </footer>
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

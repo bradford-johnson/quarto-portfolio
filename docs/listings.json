@@ -1,10 +1,17 @@
 [
   {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/first-post/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/projects/vending-machines/index.html",
       "/projects/fuel-economy/index.html",
-      "/projects/lariat-rentals/index.html"
+      "/projects/lariat-rentals/index.html",
+      "/blog/first-post/index.html"
     ]
   },
   {

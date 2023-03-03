@@ -1,0 +1,26 @@
+---
+title: "Bradford Johnson"
+about:
+  id: about-me
+  image: "images/static/headshot.jpg"
+  template: trestles
+  image-width: 12em
+  image-shape: round
+  links:
+    - text: "LinkedIn"
+      icon: linkedin
+      href: "https://www.linkedin.com/in/bradford-ford-johnson/"
+    - text: "GitHub"
+      icon: github
+      href: "https://github.com/bradfordjohnson"
+    - text: "Tableau"
+      icon: graph-up
+      href: "https://public.tableau.com/app/profile/bradfordjohnson"
+    - text: "Email"
+      icon: envelope
+      href: "mailto:bradfordljohnson@outlook.com"
+    - text: "Twitter"
+      icon: twitter
+      href: "https://twitter.com/bradfordj_"
+page-layout: full
+---
