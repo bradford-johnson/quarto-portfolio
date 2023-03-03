@@ -24,3 +24,39 @@ about:
       href: "https://twitter.com/bradfordj_"
 page-layout: full
 ---
+
+*Welcome! I'm an explorer of many realms: data analytics, IT, and sociology. I'm a self-taught R programmer, and visualization designer.*
+
+*Also, I love dogs; Roxy🐕 & Ollie🐕.*
+
+::: panel-tabset
+# Specialties
+
+-   Data Visualization & Dashboard Development
+-   Data Cleaning & Statistical Analysis
+-   Report Generation & Data Story Telling
+
+# Skills
+
+|                    |                      |                 |
+|:-------------------|:---------------------|:----------------|
+| SQL                | R                    | Python          |
+| Excel              | Tableau              | Quarto          |
+| Web Scraping       | Statistical Analysis | Data Wrangling  |
+| Data Visualization | GitHub               | Research Design |
+
+# Hobbies
+
+-   👨‍💻 Programming
+-   🌳⛰️ Hiking
+-   📸 Photography
+-   🗓️ [TidyTuesday!](https://github.com/rfordatascience/tidytuesday) - A weekly social data project in R
+:::
+
+::: panel-tabset
+# Education
+
+**Data Analytics** \| Thinkful \| *2022*
+
+**B.A. Sociology** \| Winthrop University \| *2021*
+:::

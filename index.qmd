@@ -42,7 +42,9 @@ about:
 ---
 
 ::: {#about-me}
-Data Analyst
+<center>**Data Analyst**</center>
+
+<br> Reach out, with the below links, if you are interested in connecting or learning more about me!
 :::
 
 ::: grid
@@ -71,7 +73,7 @@ Click [here](blog.qmd) see my latest blog posts.
 
 ## {{< fa chart-column >}} Visual Gallery
 
-*Click on an image to view the `code`!*
+*Click on an image to view the `source code`!*
 
 <p>[![](images/dynamic/african-languages.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-9/african-languages.R) [![](images/dynamic/bob-ross.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-8/bob-ross.R) [![](images/dynamic/age-gaps.png){width="31%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-7/age-gaps.R)</p>
 
