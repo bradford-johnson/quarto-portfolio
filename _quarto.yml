@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  
 website:
   title: "Bradford Johnson"
   navbar:
@@ -20,6 +21,7 @@ website:
     left: "Created by [Bradford Johnson](https://github.com/bradfordjohnson) © 2023"
     right: "This website is built with ❤️ and [Quarto](https://quarto.org/){target=\"_blank\"}."
 smooth-scroll: true
+
 format:
   html:
     link-external-newwindow: true
