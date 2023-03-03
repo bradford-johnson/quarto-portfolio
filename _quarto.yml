@@ -4,19 +4,23 @@ project:
   
 website:
   title: "Bradford Johnson"
+  favicon: favicon_io/favicon.ico
   navbar:
     pinned: true
-    right:
-      - text: "Home"
+    left:
+      - icon: house
+        text: "Home"
         href: index.qmd
-        icon: house
-      - href: projects.qmd
-        icon: folder2
-      - href: blog.qmd
-        icon: newspaper
-      - text: "About"
+      - icon: folder2
+        href: projects.qmd
+      - icon: newspaper
+        href: blog.qmd
+      - icon: file-person
+        text: "About"
         href: about.qmd
-        icon: file-person
+    right: 
+      - icon: code-square
+        href: "https://github.com/bradfordjohnson/quarto-portfolio"
   page-footer:
     left: "Created by [Bradford Johnson](https://github.com/bradfordjohnson) © 2023"
     right: "This website is built with ❤️ and [Quarto](https://quarto.org/){target=\"_blank\"}."

@@ -13,6 +13,7 @@ listing:
     type: table
     max-items: 6
     fields: [date, title]
+    table-hover: true
     filter-ui: false
     sort-ui: false
     sort:
