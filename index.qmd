@@ -44,7 +44,9 @@ about:
 ::: {#about-me}
 <center>**Data Analyst**</center>
 
-<br> Reach out, with the below links, if you are interested in connecting or learning more about me!
+::: {.callout-important appearance="minimal"}
+Interested in connecting or talking data? Use the buttons below to contact me!
+:::
 :::
 
 ::: grid
