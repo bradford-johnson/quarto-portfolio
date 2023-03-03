@@ -9,7 +9,6 @@ website:
       - text: "{{< fa address-card size=2x >}} About"
         href: index.qmd
       - resume.qmd
-      - visuals.qmd
       - projects.qmd
   page-footer:
     left: ""

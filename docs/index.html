@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -59,12 +61,70 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-landing-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-landing-posts'] = new List('listing-landing-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-landing-posts2 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-landing-posts2'] = new List('listing-landing-posts2', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -89,10 +149,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><i class="fa-solid fa-file-pdf fa-2x" aria-label="file-pdf"></i> Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./visuals.html">
- <span class="menu-text"><i class="fa-solid fa-chart-column fa-2x" aria-label="chart-column"></i> Visual Gallery</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./projects.html">
  <span class="menu-text"><i class="fa-solid fa-folder-open fa-2x" aria-label="folder-open"></i> Projects</span></a>
   </li>  
@@ -103,24 +159,29 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles page-columns page-full">
-  <div class="about-entity">
-    <img src="images/static/headshot.jpg" class="about-image
+<main class="content column-page" id="quarto-document-content">
+
+
+
+<div class="quarto-about-jolla column-page">
+  <img src="images/static/headshot.jpg" class="about-image
   round " style="height: 12em; width: 12em;">
-<header id="title-block-header" class="quarto-title-block default">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Bradford Johnson</h1>
-<p class="subtitle lead"><i class="fa-solid fa-user-plus fa-1x" aria-label="user-plus"></i> Let’s Connect</p>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header>
-    <div class="about-links">
+</header><div id="about-me">
+<p>I’m a <strong>data analyst</strong></p>
+</div> 
+  <hr class="about-sep">
+   <div class="about-links">
   <a href="https://www.linkedin.com/in/bradford-ford-johnson/" class="about-link">
      <span class="about-link-text"><i class="fa-brands fa-linkedin fa-2x" aria-label="linkedin"></i> LinkedIn</span>
   </a>
@@ -137,64 +198,168 @@ ul.task-list li input[type="checkbox"] {
      <span class="about-link-text"><i class="fa-brands fa-twitter fa-2x" aria-label="twitter"></i> Twitter</span>
   </a>
 </div>
-  </div>
-  <div class="about-contents page-columns page-full"><main class="content page-columns page-full" id="quarto-document-content">
-<div class="column-page">
-<p>I’m a <strong>data analyst</strong> who specializes in:</p>
-<ul>
-<li><p>Data Visualization &amp; Dashboard Development</p></li>
-<li><p>Data Cleaning &amp; Statistical Analysis</p></li>
-<li><p>Report Generation &amp; Data Story Telling</p></li>
-</ul>
-<p>
-</p>
-<p>Don’t forget to check out my <a href="./visuals.html">Visual Gallery!</a></p>
-<p><br></p>
-<section id="fa-gear-skills" class="level3">
-<h3 data-anchor-id="fa-gear-skills"><i class="fa-solid fa-gear" aria-label="gear"></i> <strong>Skills</strong></h3>
-<p>
-</p>
-<table class="table">
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">SQL</td>
-<td style="text-align: left;">R</td>
-<td style="text-align: left;">Python</td>
+</div>
+
+<div class="grid">
+<section id="projects" class="level2 g-col-12 g-col-md-6">
+<h2 data-anchor-id="projects">Projects</h2>
+<p>Click <a href="./index.html">here</a> to check out the latest on the ForBlog.</p>
+<div id="listing-landing-posts" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Thinkful Capstone" data-listing-date-sort="1670648400000" data-listing-file-modified-sort="1674338935667" data-listing-reading-time-sort="4.35">
+<div class="thumbnail">
+<p><a href="./projects/vending-machines/index.html"> <img src="./projects/vending-machines/images/dynamic/nik-albert-pGQpBcylvOA-unsplash.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./projects/vending-machines/index.html">
+<h3 class="no-anchor listing-title">
+Vending Machine Sales
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Analysis on trends among various vending machines and optimizing their stocking methods</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./projects/vending-machines/index.html">
+<div class="listing-date">
+Dec 10, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Thinkful Capstone" data-listing-date-sort="1667361600000" data-listing-file-modified-sort="1674338950923" data-listing-reading-time-sort="3.04">
+<div class="thumbnail">
+<p><a href="./projects/fuel-economy/index.html"> <img src="./projects/fuel-economy/images/dynamic/dawn-mcdonald-lBP2muAsD94-unsplash.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./projects/fuel-economy/index.html">
+<h3 class="no-anchor listing-title">
+Fuel Economy
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Statistical analysis on factors that drive fuel cost and consumption</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./projects/fuel-economy/index.html">
+<div class="listing-date">
+Nov 2, 2022
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Thinkful Capstone" data-listing-date-sort="1662350400000" data-listing-file-modified-sort="1674338960410" data-listing-reading-time-sort="2.23">
+<div class="thumbnail">
+<p><a href="./projects/lariat-rentals/index.html"> <img src="./projects/lariat-rentals/images/dynamic/lariat-logo.jpg" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./projects/lariat-rentals/index.html">
+<h3 class="no-anchor listing-title">
+Lariat Rentals
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+<p>Data analysis and model creation for maximizing revenue and minimizing costs</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./projects/lariat-rentals/index.html">
+<div class="listing-date">
+Sep 5, 2022
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="blog" class="level2 g-col-12 g-col-md-6">
+<h2 data-anchor-id="blog">Blog</h2>
+<p>Click <a href="./index.html">here</a> to play more in the playground.</p>
+<div id="listing-landing-posts2" class="quarto-listing quarto-listing-container-table">
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Excel</td>
-<td style="text-align: left;">Tableau</td>
-<td style="text-align: left;">Quarto</td>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="Thinkful Capstone" data-listing-date-sort="1670648400000" data-listing-file-modified-sort="1674338935667" data-listing-reading-time-sort="4.35" data-listing-title-sort="Vending Machine Sales" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
+Dec 10, 2022
+</td>
+<td class="listing-title">
+<a href="./projects/vending-machines/index.html" class="title">Vending Machine Sales</a>
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Web Scraping</td>
-<td style="text-align: left;">Statistical Analysis</td>
-<td style="text-align: left;">Data Wrangling</td>
+<tr data-index="1" data-categories="Thinkful Capstone" data-listing-date-sort="1667361600000" data-listing-file-modified-sort="1674338950923" data-listing-reading-time-sort="3.04" data-listing-title-sort="Fuel Economy" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
+Nov 2, 2022
+</td>
+<td class="listing-title">
+<a href="./projects/fuel-economy/index.html" class="title">Fuel Economy</a>
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Data Visualization</td>
-<td style="text-align: left;">Documentation</td>
-<td style="text-align: left;">Research Design</td>
+<tr data-index="2" data-categories="Thinkful Capstone" data-listing-date-sort="1662350400000" data-listing-file-modified-sort="1674338960410" data-listing-reading-time-sort="2.23" data-listing-title-sort="Lariat Rentals" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
+Sep 5, 2022
+</td>
+<td class="listing-title">
+<a href="./projects/lariat-rentals/index.html" class="title">Lariat Rentals</a>
+</td>
 </tr>
 </tbody>
+
 </table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+</div>
+<div>
+<center>
+<section id="fa-chart-column-size2x-visual-gallery" class="level2">
+<h2 data-anchor-id="fa-chart-column-size2x-visual-gallery"><i class="fa-solid fa-chart-column fa-2x" aria-label="chart-column"></i> Visual Gallery</h2>
+<p>click on an image to view the code!</p>
 <p>
+<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-9/african-languages.R" target="_blank"><img src="images/dynamic/african-languages.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-8/bob-ross.R" target="_blank"><img src="images/dynamic/bob-ross.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-7/age-gaps.R" target="_blank"><img src="images/dynamic/age-gaps.png" class="img-fluid" style="width:31.0%"></a>
 </p>
-</section>
-<section id="fa-bookmark-interests" class="level3">
-<h3 data-anchor-id="fa-bookmark-interests"><i class="fa-solid fa-bookmark" aria-label="bookmark"></i> <strong>Interests</strong></h3>
-<ul>
-<li>Hiking</li>
-<li>Photography</li>
-<li><a href="https://github.com/rfordatascience/tidytuesday" target="_blank">TidyTuesday!</a> - A weekly social data project in R</li>
-</ul>
-</section>
+<p>
+<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-6/stocks.R" target="_blank"><img src="images/dynamic/stocks.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-5/cats.R" target="_blank"><img src="images/dynamic/cats.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-4/alone.R" target="_blank"><img src="images/dynamic/alone.png" class="img-fluid" style="width:31.0%"></a>
+</p>
+<p>
+<a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-3/art-history.R" target="_blank"><img src="images/dynamic/art-history-v2.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-2/birds.R" target="_blank"><img src="images/dynamic/birds.png" class="img-fluid" style="width:31.0%"></a> <a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/week-1/rfid.R" target="_blank"><img src="images/dynamic/rfid-v1.png" class="img-fluid" style="width:31.0%"></a>
+</p>
+</section></center>
+
 </div>
 
 
-</main></div>
-</div>
- <!-- /main -->
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

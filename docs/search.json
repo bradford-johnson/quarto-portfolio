@@ -4,7 +4,28 @@
     "href": "index.html",
     "title": "Bradford Johnson",
     "section": "",
-    "text": "I’m a data analyst who specializes in:\n\nData Visualization & Dashboard Development\nData Cleaning & Statistical Analysis\nReport Generation & Data Story Telling\n\n\n\nDon’t forget to check out my Visual Gallery!\n\n\n Skills\n\n\n\n\n\nSQL\nR\nPython\n\n\nExcel\nTableau\nQuarto\n\n\nWeb Scraping\nStatistical Analysis\nData Wrangling\n\n\nData Visualization\nDocumentation\nResearch Design\n\n\n\n\n\n\n\n Interests\n\nHiking\nPhotography\nTidyTuesday! - A weekly social data project in R"
+    "text": "I’m a data analyst\n \n  \n   \n  \n      LinkedIn\n  \n  \n      Github\n  \n  \n      Tableau\n  \n  \n      Email\n  \n  \n      Twitter"
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "Bradford Johnson",
+    "section": "Projects",
+    "text": "Projects\nClick here to check out the latest on the ForBlog.\n\n\n\n\n  \n\n\n\n\nVending Machine Sales\n\n\n\n\n\nAnalysis on trends among various vending machines and optimizing their stocking methods\n\n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n  \n\n\n\n\nFuel Economy\n\n\n\n\n\nStatistical analysis on factors that drive fuel cost and consumption\n\n\n\n\n\n\nNov 2, 2022\n\n\n\n\n\n\n  \n\n\n\n\nLariat Rentals\n\n\n\n\n\nData analysis and model creation for maximizing revenue and minimizing costs\n\n\n\n\n\n\nSep 5, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#blog",
+    "href": "index.html#blog",
+    "title": "Bradford Johnson",
+    "section": "Blog",
+    "text": "Blog\nClick here to play more in the playground.\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\nDec 10, 2022\n\n\nVending Machine Sales\n\n\n\n\nNov 2, 2022\n\n\nFuel Economy\n\n\n\n\nSep 5, 2022\n\n\nLariat Rentals\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#fa-chart-column-size2x-visual-gallery",
+    "href": "index.html#fa-chart-column-size2x-visual-gallery",
+    "title": "Bradford Johnson",
+    "section": " Visual Gallery",
+    "text": "Visual Gallery\nclick on an image to view the code!"
   },
   {
     "objectID": "projects/fuel-economy/index.html",
@@ -61,12 +82,5 @@
     "title": "Bradford Johnson",
     "section": "",
     "text": "Resume"
-  },
-  {
-    "objectID": "visuals.html",
-    "href": "visuals.html",
-    "title": "Bradford Johnson",
-    "section": "",
-    "text": "Visual Gallery"
   }
 ]
