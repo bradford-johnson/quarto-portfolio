@@ -15,6 +15,9 @@ website:
         href: projects.qmd
       - icon: newspaper
         href: blog.qmd
+      - icon: calendar-event
+        text: "TidyTuesday"
+        href: tidytuesday.qmd
       - icon: file-person
         text: "About"
         href: about.qmd
