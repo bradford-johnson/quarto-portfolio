@@ -103,5 +103,12 @@
     "title": "Projects",
     "section": "",
     "text": "Vending Machine Sales\n\n\n\n\n\n\n\nThinkful Capstone\n\n\n\n\nAnalysis on trends among various vending machines and optimizing their stocking methods\n\n\n\n\n\n\nDec 10, 2022\n\n\n\n\n\n\n  \n\n\n\n\nFuel Economy\n\n\n\n\n\n\n\nThinkful Capstone\n\n\n\n\nStatistical analysis on factors that drive fuel cost and consumption\n\n\n\n\n\n\nNov 2, 2022\n\n\n\n\n\n\n  \n\n\n\n\nLariat Rentals\n\n\n\n\n\n\n\nThinkful Capstone\n\n\n\n\nData analysis and model creation for maximizing revenue and minimizing costs\n\n\n\n\n\n\nSep 5, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "tidytuesday.html",
+    "href": "tidytuesday.html",
+    "title": "TidyTuesday",
+    "section": "",
+    "text": "Every Tuesday a new dataset is featured for the community to clean, wrangle and visualize. All focused within the tidyverse framework in R!\n\n\n\n\n\n\nHere are my TidyTuesday Visuals for 2023!\n\n\n\n\n\n\n\nWant to know how I made the visuals?\n\n\n\n\n\nClick on the images to view the code!\n\n\n\n\n\n\nDate\nData\nVisual\n\n\n\n\n01/03/23\nBring your own data:\nSynthetic Data\n\n\n\n01/10/23\nBird FeederWatch data:\nData Source\n\n\n\n01/17/23\nArt History data:\nData Source\n\n\n\n01/24/23\nAlone TV Series data:\nData Source\n\n\n\n01/31/23\nPet Cats UK data:\nData Source\n\n\n\n02/07/23\nTech Stocks data:\nData Source\n\n\n\n02/14/23\nHollywood age gap data:\nData Source\n\n\n\n02/21/23\nBob Ross Paintings data:\nData Source\n\n\n\n02/28/23\nAfrican language sentiment data:\nData Source"
   }
 ]

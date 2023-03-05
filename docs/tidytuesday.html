@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bradford Johnson - Blog</title>
+<title>Bradford Johnson - TidyTuesday</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./favicon_io/favicon.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,38 +58,8 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -123,12 +91,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"><i class="bi bi-newspaper" role="img">
+    <a class="nav-link" href="./blog.html"><i class="bi bi-newspaper" role="img">
 </i> 
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tidytuesday.html"><i class="bi bi-calendar-event" role="img">
+    <a class="nav-link active" href="./tidytuesday.html" aria-current="page"><i class="bi bi-calendar-event" role="img">
 </i> 
  <span class="menu-text">TidyTuesday</span></a>
   </li>  
@@ -154,15 +122,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">TidyTuesday</h1>
 </div>
 
 
@@ -177,52 +143,109 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-
-<table class="quarto-listing-table table table-hover">
+<div class="column-page">
+<center>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/rfordatascience/tidytuesday"><img src="images/static/tt_logo.png" class="img-fluid figure-img" style="width:80.0%"></a></p>
+</figure>
+</div>
+<p>Every Tuesday a new dataset is featured for the community to clean, wrangle and visualize. All focused within the <code>tidyverse</code> framework in <code>R</code>!</p>
+</center>
+<p><br></p>
+</div>
+<div class="column-page">
+<center>
+<section id="here-are-my-tidytuesday-visuals-for-2023" class="level3">
+<h3 class="anchored" data-anchor-id="here-are-my-tidytuesday-visuals-for-2023">Here are my TidyTuesday Visuals for 2023!</h3>
+</section></center>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Want to know how I made the visuals?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Click on the images to view the code!</p>
+</div>
+</div>
+</div>
+<table class="table">
 <thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Title
-</th>
-<th>
-Description
-</th>
-<th>
-Reading Time
-</th>
+<tr class="header">
+<th style="text-align: center;"><h4 id="date" class="anchored">Date</h4></th>
+<th style="text-align: left;"><h4 id="data" class="anchored">Data</h4></th>
+<th style="text-align: center;"><h4 id="visual" class="anchored">Visual</h4></th>
 </tr>
 </thead>
-<tbody class="list">
-<tr data-index="0" data-categories="Quarto" data-listing-date-sort="1677819600000" data-listing-file-modified-sort="1677878544079" data-listing-reading-time-sort="3.565" data-listing-title-sort="Why Quarto?" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td class="listing-date">
-Mar 3, 2023
-</td>
-<td class="listing-title">
-<a href="./blog/01-blog-intro/index.html" class="title">Why Quarto?</a>
-</td>
-<td class="listing-description">
-Why I build my website with Quarto…
-</td>
-<td class="listing-reading-time">
-3 min
-</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><h5 id="section" class="anchored">01/03/23</h5></td>
+<td style="text-align: left;"><h5 id="bring-your-own-data" class="anchored"><code>Bring your own data:</code></h5>
+<h5 id="synthetic-data" class="anchored">Synthetic Data</h5></td>
+<td style="text-align: center;"><a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-01-03/rfid.R"><img src="images/dynamic/rfid-v1.png" class="img-fluid" style="width:50.0%"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><h5 id="section-1" class="anchored">01/10/23</h5></td>
+<td style="text-align: left;"><h5 id="bird-feederwatch-data" class="anchored"><code>Bird FeederWatch data:</code></h5>
+<h5 id="data-source" class="anchored"><a href="https://feederwatch.org/explore/raw-dataset-requests/">Data Source</a></h5></td>
+<td style="text-align: center;"><a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-01-10/birds.R"><img src="images/dynamic/birds.png" class="img-fluid" style="width:50.0%"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><h5 id="section-2" class="anchored">01/17/23</h5></td>
+<td style="text-align: left;"><h5 id="art-history-data" class="anchored"><code>Art History data:</code></h5>
+<h5 id="data-source-1" class="anchored"><a href="https://saralemus7.github.io/arthistory/">Data Source</a></h5></td>
+<td style="text-align: center;"><a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-01-17/art-history.R"><img src="images/dynamic/art-history-v2.png" class="img-fluid" style="width:50.0%"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><h5 id="section-3" class="anchored">01/24/23</h5></td>
+<td style="text-align: left;"><h5 id="alone-tv-series-data" class="anchored"><code>Alone TV Series data:</code></h5>
+<h5 id="data-source-2" class="anchored"><a href="https://gradientdescending.com/alone-r-package-datasets-from-the-survival-tv-series/">Data Source</a></h5></td>
+<td style="text-align: center;"><a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-01-24/alone.R"><img src="images/dynamic/alone.png" class="img-fluid" style="width:50.0%"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><h5 id="section-4" class="anchored">01/31/23</h5></td>
+<td style="text-align: left;"><h5 id="pet-cats-uk-data" class="anchored"><code>Pet Cats UK data:</code></h5>
+<h5 id="data-source-3" class="anchored"><a href="https://www.datarepository.movebank.org/handle/10255/move.882/">Data Source</a></h5></td>
+<td style="text-align: center;"><a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-01-31/cats.R"><img src="images/dynamic/cats.png" class="img-fluid" style="width:50.0%"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><h5 id="section-5" class="anchored">02/07/23</h5></td>
+<td style="text-align: left;"><h5 id="tech-stocks-data" class="anchored"><code>Tech Stocks data:</code></h5>
+<h5 id="data-source-4" class="anchored"><a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-02-07">Data Source</a></h5></td>
+<td style="text-align: center;"><a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-02-07/stocks.R"><img src="images/dynamic/stocks.png" class="img-fluid" style="width:50.0%"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><h5 id="section-6" class="anchored">02/14/23</h5></td>
+<td style="text-align: left;"><h5 id="hollywood-age-gap-data" class="anchored"><code>Hollywood age gap data:</code></h5>
+<h5 id="data-source-5" class="anchored"><a href="https://hollywoodagegap.com/">Data Source</a></h5></td>
+<td style="text-align: center;"><a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-02-14/age-gaps.R"><img src="images/dynamic/age-gaps.png" class="img-fluid" style="width:50.0%"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><h5 id="section-7" class="anchored">02/21/23</h5></td>
+<td style="text-align: left;"><h5 id="bob-ross-paintings-data" class="anchored"><code>Bob Ross Paintings data:</code></h5>
+<h5 id="data-source-6" class="anchored"><a href="https://github.com/jwilber/Bob_Ross_Paintings/blob/master/data/bob_ross_paintings.csv">Data Source</a></h5></td>
+<td style="text-align: center;"><a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-02-21/bob-ross.R"><img src="images/dynamic/bob-ross.png" class="img-fluid" style="width:50.0%"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><h5 id="section-8" class="anchored">02/28/23</h5></td>
+<td style="text-align: left;"><h5 id="african-language-sentiment-data" class="anchored"><code>African language sentiment data:</code></h5>
+<h5 id="data-source-7" class="anchored"><a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-02-28">Data Source</a></h5></td>
+<td style="text-align: center;"><a href="https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-02-28/african-languages.R"><img src="images/dynamic/african-languages.png" class="img-fluid" style="width:50.0%"></a></td>
 </tr>
 </tbody>
-
 </table>
-<div class="listing-no-matching d-none">
-No matching items
+
 </div>
-</div></main> <!-- /main -->
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
