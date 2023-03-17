@@ -78,3 +78,9 @@ Every Tuesday a new dataset is featured for the community to clean, wrangle and 
 
 [![](images/dynamic/numbats.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-03-07/numbats.R)
 :::
+
+::: {.callout-note collapse="false"}
+## 03/14/23 \| **European Drug Development data**
+
+[![](images/dynamic/euro-drugs-1.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-03-14/euro-drugs.R)
+:::
