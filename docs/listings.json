@@ -8,6 +8,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/projects/seinfeld/index.html",
       "/projects/vending-machines/index.html",
       "/projects/fuel-economy/index.html",
       "/projects/lariat-rentals/index.html",
@@ -17,6 +18,7 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/seinfeld/index.html",
       "/projects/vending-machines/index.html",
       "/projects/fuel-economy/index.html",
       "/projects/lariat-rentals/index.html"
