@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/02-r/index.html",
       "/blog/01-blog-intro/index.html"
     ]
   },
@@ -12,6 +13,7 @@
       "/projects/vending-machines/index.html",
       "/projects/fuel-economy/index.html",
       "/projects/lariat-rentals/index.html",
+      "/blog/02-r/index.html",
       "/blog/01-blog-intro/index.html"
     ]
   },
