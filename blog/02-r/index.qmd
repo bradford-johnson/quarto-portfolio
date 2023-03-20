@@ -1,7 +1,7 @@
 ---
 title: "Learning R"
 date: "3/14/2023"
-description: "How I teach myself R"
+description: "How I taught myself R"
 categories: ["R"]
 format: html
 editor: visual
@@ -52,9 +52,13 @@ Here's one of my `R` visuals from this time period:
 
 I was getting better and learning more, however with my perfectionist mindset I created a new `GitHub` account because I missed a daily contribution while on vacation. I have since come to terms with this, as it is not good to force progress with such high work loads, however this was one of my motivation factors at the time.
 
-<center>![](images/github-winter.png){width="80%"}
+<center>
 
-![](images/github.png){width="80%"}</center>
+![](images/github-winter.png){width="80%"}
+
+![](images/github.png){width="80%"}
+
+</center>
 
 <br>
 
