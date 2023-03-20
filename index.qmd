@@ -80,7 +80,7 @@ Click [here](blog.qmd) see my latest blog posts.
 
 <p>[![](projects/seinfeld/images/01-seinfeld-sentiment.png){width="80%"}](https://github.com/bradfordjohnson/seinfeld-analysis/blob/main/scripts/sentiment/06-visualize-sentiment.R)</p>
 
-<p>[![](images/dynamic/forest.png){width="60%"}](https://github.com/bradfordjohnson/state-forests/blob/master/scripts/forest-hex.R) [![](images/dynamic/topgolf.png){width="36%"}](https://github.com/bradfordjohnson/topgolf-analytics/blob/main/scripts/05-coords-test.R)</p>
+<p>[![](images/dynamic/forest.png){width="60%"}](https://github.com/bradfordjohnson/state-forests/blob/master/scripts/forest-hex.R) [![](images/dynamic/topgolf.png){width="36%"}](https://github.com/bradfordjohnson/topgolf-analytics/blob/main/scripts/05-field.R)</p>
 
 <p>[![](images/dynamic/stocks.png){width="41%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-02-07/stocks.R) [![](images/dynamic/african-languages.png){width="41%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-02-28/african-languages.R)</p>
 
