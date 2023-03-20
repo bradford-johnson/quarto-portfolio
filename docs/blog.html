@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -192,34 +192,25 @@ Date
 <th>
 Title
 </th>
-<th>
-Description
-</th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="R" data-listing-date-sort="1678766400000" data-listing-file-modified-sort="1679282509781" data-listing-reading-time-sort="6.375" data-listing-title-sort="Learning R" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-categories="R" data-listing-date-sort="1678766400000" data-listing-file-modified-sort="1679283498722" data-listing-reading-time-sort="6.375" data-listing-title-sort="Teaching myself R" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td class="listing-date">
-Mar 14, 2023
+3/14/23
 </td>
 <td class="listing-title">
-<a href="./blog/02-r/index.html" class="title">Learning R</a>
-</td>
-<td class="listing-description">
-How I teach myself R
+<a href="./blog/02-r/index.html" class="title">Teaching myself R</a>
 </td>
 </tr>
 <tr data-index="1" data-categories="Quarto" data-listing-date-sort="1677819600000" data-listing-file-modified-sort="1677878544079" data-listing-reading-time-sort="3.565" data-listing-title-sort="Why Quarto?" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td class="listing-date">
-Mar 3, 2023
+3/3/23
 </td>
 <td class="listing-title">
 <a href="./blog/01-blog-intro/index.html" class="title">Why Quarto?</a>
-</td>
-<td class="listing-description">
-Why I build my website with Quarto…
 </td>
 </tr>
 </tbody>
