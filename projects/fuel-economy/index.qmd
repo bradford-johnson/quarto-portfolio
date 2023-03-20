@@ -22,7 +22,7 @@ editor: visual
 -   They want to understand how those might drive fuel economy and annual fuel costs
 
 | **Project Objective**                                                                      |
-|------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------|
 | Identify and conduct statistical tests on factors that drive fuel economy and annual costs |
 
 ### 📂- Deliverables
@@ -30,13 +30,13 @@ editor: visual
 *Click the icons or text below to see my project files and deliverables*
 
 |                        [PowerPoint](https://1drv.ms/p/s!Ahpkb3AfX4xfhLwzWGT1K1IHn_Fk2A?e=RTB4IZ)                         |                           [Excel](https://1drv.ms/x/s!Ahpkb3AfX4xfhLxAdTGnqepw6EwTXA?e=QpBkSM)                           |
-|:----------------------------------:|:----------------------------------:|
+|:------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------:|
 | [<img src="images/static/filetype-pptx.svg" width="54px"/>](https://1drv.ms/p/s!Ahpkb3AfX4xfhLwzWGT1K1IHn_Fk2A?e=RTB4IZ) | [<img src="images/static/filetype-xlsx.svg" width="54px"/>](https://1drv.ms/x/s!Ahpkb3AfX4xfhLxAdTGnqepw6EwTXA?e=QpBkSM) |
 
 ### 🔧- Methods
 
 | Research Questions                                                                                    |
-|------------------------------------------------------------------------|
+|-------------------------------------------------------------------------------------------------------|
 | Does the Start / Stop Technology make a significant difference in fuel costs / consumption?           |
 | Does the car's "age" or model year have a significant difference in fuel economy?                     |
 | How significant is the car's class (car type: minivan, truck, compact...) in the consumption of fuel? |
