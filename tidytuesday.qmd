@@ -90,3 +90,9 @@ Every Tuesday a new dataset is featured for the community to clean, wrangle and 
 
 [![](images/dynamic/programming.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-03-21/programming.R)
 :::
+
+::: {.callout-note collapse="false"}
+## 03/21/23 \| **Time zones data**
+
+[![](images/dynamic/timezones-v2.png){width="65%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-03-28/timezones-v2.R)
+:::
