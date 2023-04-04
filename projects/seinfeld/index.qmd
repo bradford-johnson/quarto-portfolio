@@ -2,7 +2,7 @@
 title: "Seinfeld Scripts"
 date: "3/13/2023"
 description: "Text analysis of scripts from the TV series Seinfeld"
-categories: [sentiment, text analysis]
+categories: [Sentiment, Text Analysis]
 format: html
 editor: visual
 ---
