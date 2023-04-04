@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-03-27">
+<meta name="description" content="Creating a bot that can play Topgolf">
 
-<title>Bradford Johnson - Projects</title>
+<title>Bradford Johnson - Simulating Topgolf with R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./favicon_io/favicon.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon_io/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,50 +60,20 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Bradford Johnson</span>
     </a>
   </div>
@@ -113,27 +83,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"><i class="bi bi-house" role="img">
+    <a class="nav-link" href="../../index.html"><i class="bi bi-house" role="img">
 </i> 
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"><i class="bi bi-folder2" role="img">
+    <a class="nav-link" href="../../projects.html"><i class="bi bi-folder2" role="img">
 </i> 
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"><i class="bi bi-newspaper" role="img">
+    <a class="nav-link" href="../../blog.html"><i class="bi bi-newspaper" role="img">
 </i> 
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tidytuesday.html"><i class="bi bi-calendar-event" role="img">
+    <a class="nav-link" href="../../tidytuesday.html"><i class="bi bi-calendar-event" role="img">
 </i> 
  <span class="menu-text">TidyTuesday</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"><i class="bi bi-file-person" role="img">
+    <a class="nav-link" href="../../about.html"><i class="bi bi-file-person" role="img">
 </i> 
  <span class="menu-text">About</span></a>
   </li>  
@@ -151,25 +121,38 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Sentiment">Sentiment <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Text Analysis">Text Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Thinkful Capstone">Thinkful Capstone <span class="quarto-category-count">(3)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
-</div>
+<h1 class="title">Simulating Topgolf with R</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Synthetic Data</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Creating a bot that can play Topgolf
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 27, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -177,148 +160,49 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="inspiration" class="level2">
+<h2 class="anchored" data-anchor-id="inspiration">Inspiration</h2>
+<p>It all started with wanting to do a <strong>Topgolf</strong> related project… I created the field and targets by drawing shapes with colors in <code>R</code>. My next step was to plot golf balls where they landed. I was met with the tough realization and conclusion that without very tedious and manual data collection, this would not be possible. I was motivated to collect my own data, however over time I would be burnt out and this fun project would become more like a chore. This is when I thought about <strong>simulating</strong> synthetic data.</p>
+</section>
+<section id="synthetic-data" class="level2">
+<h2 class="anchored" data-anchor-id="synthetic-data">Synthetic Data</h2>
+<p>Synthetic data may sound weird, but it is actually something that is very useful. In cases where there are privacy concerns (<em>credit cards</em>, <em>customer data</em>, <em>etc</em>…), testing models, and even my case (<em>avoiding tedious work that would be neat but also could burn me out</em>). There are some <code>Python</code> libraries such as <a href="https://faker.readthedocs.io/en/master/"><code>Faker</code></a> that has functions to produce data sets with names, credit card numbers, orders and anything, but it is all synthetic data. This synthetic data can be “<em>tuned</em>” to your needs, so you can sample names from a particular geographic area. Allowing you to create <strong>customized</strong> and <strong>realistic distributions</strong> of fake data.</p>
+</section>
+<section id="simulating-a-game-of-topgolf" class="level2">
+<h2 class="anchored" data-anchor-id="simulating-a-game-of-topgolf">Simulating a Game of Topgolf</h2>
+<p>Topgolf has many different game modes that one can play, and I chose to simulate the classic “Topgolf” game mode. In this mode you get 20 golf balls, and aim for any of the targets. When a ball goes into a target then you score points, and the further targets are worth more points, however you get the most points by hitting into the most center areas of the target. Of course to simulate the game you must first have the field and targets.</p>
+<section id="creating-the-field" class="level3">
+<h3 class="anchored" data-anchor-id="creating-the-field">Creating the field</h3>
+<p>As previously mentioned I created the field by first drawing out circles to represent the targets. I did this with <code>ggplot</code> and here is what I started with:</p>
+<p><br></p>
+<p><img src="images/field.png" class="img-fluid" style="width:80.0%"></p>
+<p><br></p>
+<p>Next I created the back trench target which was a simple rectangle. Once I got all of the targets in place I gave them their respective colors and started looking to methods for creating random data.</p>
+</section>
+<section id="creating-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="creating-the-data">Creating the data</h3>
+<p>I ended up going with the <code>runif()</code> function in <code>R</code> to create my simulated data. I picked this function as I could specify the number of values I wanted to output, the minimum value and the maximum value. From there it would generate a random vector of numbers within my set min and max values. I had two <code>runif()</code> functions, one for the x coordinates of the simulated golf balls and one for the y coordinates.</p>
+<p>For the first visual I made, I simulated balls randomly within the bounds of the field and then created this heatmap:</p>
+<p><br></p>
+<p><img src="images/field-heat-map.png" class="img-fluid" style="width:80.0%"></p>
+<p><br></p>
+<p>After playing around with the visual aesthetics and adjusting the values for creating the sythetic data I was left with this final version:</p>
+<p><br></p>
+<p><img src="../..\images/dynamic/topgolf.png" class="img-fluid" style="width:80.0%"></p>
+<p><br></p>
+</section>
+<section id="automation-and-bots" class="level3">
+<h3 class="anchored" data-anchor-id="automation-and-bots">Automation and “bots”</h3>
+<p>However, this is only the final version of the visual… Currently I’m using <code>R</code> and <code>GitHub Actions</code> to create a bot that will play games of Topgolf at set schedules and report the game’s results. As of the writing of this blog post, the bot is working and plays a new game every day. Right now it plays the default Topgolf game mode, which gives 20 balls to hit into any of the targets.</p>
+<p>In addition to playing a game each day, the bot makes a random decision on what club it will use for the 20 balls it hits. Currently the club choice will determine the distance of where the balls can be hit. So a driver will allow for the bot to hit the back targets, and a pitching wedge will only hit out to the green targets.</p>
+<p>There is not a scoring system implemented yet, but I have already created the code and confirmed that I can detect if a ball scores in a target, and which target it scores in. My next step is to implement the scoring system with this and create a <strong>virtual scorecard</strong> that will update with each game.</p>
+<p><a href="https://github.com/bradfordjohnson/topgolf-simulation">Click here</a> to check out my bot’s most recent game, and I will be updating this blog post as I implement more features!</p>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Sentiment,Text Analysis" data-listing-date-sort="1678680000000" data-listing-file-modified-sort="1680576043553" data-listing-reading-time-sort="2.185">
-<div class="thumbnail">
-<p><a href="./projects/seinfeld/index.html"> <img src="./projects/seinfeld/images/01-seinfeld-sentiment.png" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./projects/seinfeld/index.html">
-<h3 class="no-anchor listing-title">
-Seinfeld Scripts
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Sentiment'); return false;">
-Sentiment
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Text Analysis'); return false;">
-Text Analysis
-</div>
-</div>
-<a href="./projects/seinfeld/index.html">
-<div class="listing-description">
-<p>Text analysis of scripts from the TV series Seinfeld</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./projects/seinfeld/index.html">
-<div class="listing-date">
-Mar 13, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Thinkful Capstone" data-listing-date-sort="1670648400000" data-listing-file-modified-sort="1679447083064" data-listing-reading-time-sort="4.81">
-<div class="thumbnail">
-<p><a href="./projects/vending-machines/index.html"> <img src="./projects/vending-machines/images/dynamic/nik-albert-pGQpBcylvOA-unsplash.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./projects/vending-machines/index.html">
-<h3 class="no-anchor listing-title">
-Vending Machine Sales
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Thinkful Capstone'); return false;">
-Thinkful Capstone
-</div>
-</div>
-<a href="./projects/vending-machines/index.html">
-<div class="listing-description">
-<p>Analysis on trends among various vending machines and optimizing their stocking methods</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./projects/vending-machines/index.html">
-<div class="listing-date">
-Dec 10, 2022
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Thinkful Capstone" data-listing-date-sort="1667361600000" data-listing-file-modified-sort="1679447083050" data-listing-reading-time-sort="3.04">
-<div class="thumbnail">
-<p><a href="./projects/fuel-economy/index.html"> <img src="./projects/fuel-economy/images/dynamic/dawn-mcdonald-lBP2muAsD94-unsplash.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./projects/fuel-economy/index.html">
-<h3 class="no-anchor listing-title">
-Fuel Economy
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Thinkful Capstone'); return false;">
-Thinkful Capstone
-</div>
-</div>
-<a href="./projects/fuel-economy/index.html">
-<div class="listing-description">
-<p>Statistical analysis on factors that drive fuel cost and consumption</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./projects/fuel-economy/index.html">
-<div class="listing-date">
-Nov 2, 2022
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Thinkful Capstone" data-listing-date-sort="1662350400000" data-listing-file-modified-sort="1679447083055" data-listing-reading-time-sort="2.23">
-<div class="thumbnail">
-<p><a href="./projects/lariat-rentals/index.html"> <img src="./projects/lariat-rentals/images/dynamic/lariat-logo.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./projects/lariat-rentals/index.html">
-<h3 class="no-anchor listing-title">
-Lariat Rentals
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Thinkful Capstone'); return false;">
-Thinkful Capstone
-</div>
-</div>
-<a href="./projects/lariat-rentals/index.html">
-<div class="listing-description">
-<p>Data analysis and model creation for maximizing revenue and minimizing costs</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./projects/lariat-rentals/index.html">
-<div class="listing-date">
-Sep 5, 2022
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -476,5 +360,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
