@@ -96,3 +96,9 @@ Every Tuesday a new dataset is featured for the community to clean, wrangle and 
 
 [![](images/dynamic/timezones-v2.png){width="65%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-03-28/timezones-v2.R)
 :::
+
+::: {.callout-note collapse="false"}
+## 04/04/23 \| **Premier League Match data**
+
+[![](images/dynamic/soccer.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-04-04/soccer.R)
+:::
