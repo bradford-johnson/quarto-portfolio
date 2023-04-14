@@ -102,3 +102,9 @@ Every Tuesday a new dataset is featured for the community to clean, wrangle and 
 
 [![](images/dynamic/soccer.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-04-04/soccer.R)
 :::
+
+::: {.callout-note collapse="false"}
+## 04/11/23 \| **US Egg Production data**
+
+[![](images/dynamic/eggs.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-04-11/eggs.R)
+:::
