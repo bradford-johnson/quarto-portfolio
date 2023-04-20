@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/04-d3/index.html",
       "/blog/03-topgolf/index.html",
       "/blog/02-r/index.html",
       "/blog/01-blog-intro/index.html"
@@ -14,6 +15,7 @@
       "/projects/vending-machines/index.html",
       "/projects/fuel-economy/index.html",
       "/projects/lariat-rentals/index.html",
+      "/blog/04-d3/index.html",
       "/blog/03-topgolf/index.html",
       "/blog/02-r/index.html",
       "/blog/01-blog-intro/index.html"
