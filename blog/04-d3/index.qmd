@@ -28,9 +28,9 @@ rsplit <- function(x) {
   unname(mapply(function(v,n) {if(!is.null(v)) list(name=n, children=v) else list(name=n)}, lapply(s, rsplit), names(s), SIMPLIFY=FALSE))
 ```
 
-It will essentially create subsists and then allow you to apply this to objects to get the subsisted output. Once you have the output you can simply use the `networkD3` functions to create one of these visuals. I had to use this function multiple times for each of the different crop categories, and then put it all into a data frame.
+This `rsplit()` function will essentially allow you to apply it to objects to get the sublisted outputs. Once you have the output you can simply use the `networkD3` functions to create one of these visuals. I had to use this function multiple times for each of the different crop categories, and then put it all into a data frame to prepare my data.
 
-Finally I had the visual I wanted except for the colors... After more research I ended up finding this bit of code that allowed me to apply colors using `js` on the back end.
+Finally I had the visual I wanted except for the colors... After more research I ended up finding this bit of code that allowed me to apply custom colors using `js` on the back end.
 
 ``` r
 colorVector <- c(rep("#96B48C", 235))
@@ -39,9 +39,9 @@ jsarray <- paste0('["', paste(colorVector, collapse = '", "'), '"]')
 nodeStrokeJS <- JS(paste0('function(d, i) { return ', jsarray, '[i]; }'))
 ```
 
-I'm happy with the end result, it is dynamic so the text grows when you mouse over it. I think this was a good way to get introduced to some `D3` but within the `R` environment. I do think with all of the nodes and text is a bit busy, and I would like in the future to do some highlighting of specific paths. Also I searched and tried some ways to make the visual larger, but could not find a solution. However, overall this little experiment was more of a "proof of concept" and way to get me exposed more to the dynamic aspects of visualizing data.
+I'm happy with the end result, it is dynamic so the text grows when you mouse over it. I think this was a good way to get introduced to some `D3` within the `R` environment. I do think with all of the nodes and text is a bit busy, and I would like in the future to do some highlighting of specific paths. Also I searched and tried some ways to make the visual larger, but could not find a solution. However, overall this little experiment was more of a "proof of concept" and way to get me exposed more to the dynamic aspects of visualizing data.
 
-My goals moving forward are to continue learning and expanding my knowledge (even beyond `R`) in order to create more dynamic and insightful visuals. I want to do more with `D3`, `SQL`, and `Python` so that is next up!
+My goals moving forward are to continue learning and expanding my knowledge (even beyond `R`) in order to create more dynamic and insightful visuals. I want to do more with `D3`, `SQL`, and `Python` so working within those tools is next up!
 
 ```{r}
 #| code-fold: true
