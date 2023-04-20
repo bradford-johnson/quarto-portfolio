@@ -108,3 +108,9 @@ Every Tuesday a new dataset is featured for the community to clean, wrangle and 
 
 [![](images/dynamic/eggs.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-04-11/eggs.R)
 :::
+
+::: {.callout-note collapse="false"}
+## 04/18/23 \| **Neolithic Founder Crops data**
+
+[![](images/dynamic/crops.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-04-18/crops.R)
+:::
