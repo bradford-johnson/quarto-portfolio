@@ -114,3 +114,9 @@ Every Tuesday a new dataset is featured for the community to clean, wrangle and 
 
 [![](images/dynamic/crops.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-04-18/crops.R)
 :::
+
+::: {.callout-note collapse="false"}
+## 04/25/23 \| **London Marathon data**
+
+[![](images/dynamic/london_marathon.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-04-25/london_marathon.R)
+:::
