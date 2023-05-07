@@ -120,3 +120,9 @@ Every Tuesday a new dataset is featured for the community to clean, wrangle and 
 
 [![](images/dynamic/london_marathon.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-04-25/london_marathon.R)
 :::
+
+::: {.callout-note collapse="false"}
+## 05/02/23 \| **The Portal Project data**
+
+[![](images/dynamic/portal_project.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-05-02/portal_project.R)
+:::
