@@ -126,3 +126,9 @@ Every Tuesday a new dataset is featured for the community to clean, wrangle and 
 
 [![](images/dynamic/portal_project.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-05-02/portal_project.R)
 :::
+
+::: {.callout-note collapse="false"}
+## 05/09/23 \| **Childcare Costs data**
+
+[![](images/dynamic/child_care.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-05-09/child_care.R)
+:::
