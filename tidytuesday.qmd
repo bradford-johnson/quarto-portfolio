@@ -132,3 +132,9 @@ Every Tuesday a new dataset is featured for the community to clean, wrangle and 
 
 [![](images/dynamic/child_care.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-05-09/child_care.R)
 :::
+
+::: {.callout-note collapse="false"}
+## 05/16/23 \| **Tornados data**
+
+[![](images/dynamic/tornados.png){width="60%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-05-16/tornados.R)
+:::
