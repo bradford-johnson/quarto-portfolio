@@ -2,14 +2,12 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/posts/project-posts/post-with-code/index.html",
-      "/posts/project-posts/welcome/index.html"
+      "/posts/project-posts/seinfeld/index.html"
     ]
   },
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/blog-posts/post-with-code/index.html",
       "/posts/blog-posts/welcome/index.html"
     ]
   }

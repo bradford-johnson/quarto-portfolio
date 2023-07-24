@@ -17,10 +17,8 @@ about:
       href: https://github.com/bradfordjohnson
 ---
 
-# About this blog
+I'm an experienced data analyst who is passionate about solving problems. I enjoy being able to tell a story with data, and help others see beyond the noise. I started off as a self-taught R developer and have since implemented additional tools like Python and SQL into my analytics workflow. This allows me to pick the best tool for the job at hand.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc.
+I really like photography and hiking, I have
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc.

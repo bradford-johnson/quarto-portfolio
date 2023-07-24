@@ -6,10 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2023-07-19">
+<meta name="author" content="Bradford Johnson">
+<meta name="dcterms.date" content="2023-03-13">
+<meta name="description" content="Text analysis of scripts from the TV series Seinfeld">
 
-<title>Bradford Johnson - Welcome To My Blog</title>
+<title>Bradford Johnson - Seinfeld Scripts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -122,11 +123,13 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-              </div>
-                  </div>
+      <h1 class="title">Seinfeld Scripts</h1>
+                  <div>
+        <div class="description">
+          Text analysis of scripts from the TV series Seinfeld
+        </div>
+      </div>
+                </div>
   </div>
     
   
@@ -135,14 +138,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
+               <p>Bradford Johnson </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 19, 2023</p>
+        <p class="date">March 13, 2023</p>
       </div>
     </div>
     
@@ -155,16 +158,132 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<section id="seinfeld-text-analysis-using-r" class="level1 page-columns page-full">
+<h1>Seinfeld Text Analysis using <code>R</code></h1>
+<div class="column-page-inset">
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<ul>
+<li><strong>Sentiment analysis of Seinfeld scripts</strong>
+<ul>
+<li>Positive and negative sentiments across different lexicons</li>
+</ul></li>
+<li><strong>Identify “catchphrases”, common themes, and inside jokes</strong>
+<ul>
+<li>Word frequency and relationships</li>
+</ul></li>
+<li><strong>Word correlation</strong>
+<ul>
+<li>How are certain words related?</li>
+</ul></li>
+<li><strong>Wrangle and visualize insightful relationships</strong>…</li>
+</ul>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<section id="the-data-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="the-data-workflow">The Data Workflow</h3>
+<ul>
+<li>Separate processes into dedicated <code>R</code> scripts and ‘<em>stages</em>’:
+<ul>
+<li>Individual <code>R</code> file for each data prep / wrangling / cleaning task</li>
+<li>Save wrangled and cleaned data frames as <code>.csv</code>’s</li>
+<li>Load prepared data into dedicated visualization scripts</li>
+<li>Save individual visuals and final visuals</li>
+</ul></li>
+</ul>
+<p><strong>This workflow is done in stages for the following reasons:</strong></p>
+<ul>
+<li><p>Lighten the workload on a machine | <em>lots of text in these data sets</em></p></li>
+<li><p>Maintain an organized work environment</p></li>
+<li><p>Prepared data can be saved and used in the future | <em>version control</em></p></li>
+<li><p>Errors can be isolated</p></li>
+</ul>
+</section>
+<section id="sentiment-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="sentiment-analysis">Sentiment Analysis</h3>
+<ul>
+<li><p><code>unnest_tokens()</code> | Separate <em>text into rows of single words</em></p></li>
+<li><p><code>anti_join()</code> | <em>Drop uninteresting words (stop words)</em></p></li>
+<li><p><code>get_sentiment()</code> | <em>Evaluating 3 different lexicons:</em></p>
+<ul>
+<li><p>Bing</p></li>
+<li><p>NRC</p></li>
+<li><p>AFINN</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="bigrams" class="level3">
+<h3 class="anchored" data-anchor-id="bigrams">Bigrams</h3>
+<blockquote class="blockquote">
+<p><strong>Bigrams:</strong> Pairs of consecutive words grouped by character with counts</p>
+</blockquote>
+<ul>
+<li><code>unnest_tokens(bigram)</code> | Separate <em>text into rows of two words</em></li>
+<li><code>filter()</code> | <em>Remove common stop words and selected words</em></li>
+<li><code>count()</code> | <em>Get counts of bigrams</em></li>
+</ul>
+</section>
+</section>
+<section id="visuals" class="level2">
+<h2 class="anchored" data-anchor-id="visuals">Visuals</h2>
+<section id="sentiment-raincloud" class="level3">
+<h3 class="anchored" data-anchor-id="sentiment-raincloud">Sentiment Raincloud</h3>
+<p align="center">
+</p><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/bradfordjohnson/seinfeld-analysis/blob/main/scripts/sentiment/06-visualize-sentiment.R"><img src="01-seinfeld-sentiment.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<p></p>
+<hr>
+</section>
+<section id="bigrams-1" class="level3">
+<h3 class="anchored" data-anchor-id="bigrams-1">Bigrams</h3>
+<p align="center">
+</p><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/bradfordjohnson/seinfeld-analysis/blob/main/scripts/grams/03-visualize-bi.R"><img src="02-seinfeld-bigrams.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<p></p>
+</section>
+</section>
+<section id="what-i-learned" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-learned">What I Learned</h2>
+<ul>
+<li><p>How to use lexicons and “tune” them for a specific need</p></li>
+<li><p>How to filter words like stop words, and customize the lists of words</p></li>
+<li><p>Using <code>bigrams</code>, <code>trigrams</code>, and <code>correlation</code> to identify common themes and trends</p></li>
+<li><p>How to implement these methods to paint the bigger picture</p></li>
+</ul>
+</section>
+<section id="citations" class="level2">
+<h2 class="anchored" data-anchor-id="citations">Citations</h2>
+<section id="data" class="level3">
+<h3 class="anchored" data-anchor-id="data">Data</h3>
+<ul>
+<li><a href="https://www.kaggle.com/datasets/thec03u5/seinfeld-chronicles">Seinfeld data</a></li>
+</ul>
+</section>
+<section id="lexicons" class="level3">
+<h3 class="anchored" data-anchor-id="lexicons">Lexicons</h3>
+<ul>
+<li><p>Finn Årup Nielsen A new ANEW: Evaluation of a word list for sentiment analysis in microblogs. Proceedings of the ESWC2011 Workshop on ‘Making Sense of Microposts’: Big things come in small packages 718 in CEUR Workshop Proceedings 93-98. 2011 May. <a href="https://arxiv.org/abs/1103.2903" class="uri">https://arxiv.org/abs/1103.2903</a>.</p></li>
+<li><p>Minqing Hu and Bing Liu, “Mining and summarizing customer reviews.”, Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining (KDD-2004), 2004.</p></li>
+<li><p>Mohammad, S.M. and Turney, P.D. (2013), CROWDSOURCING A WORD–EMOTION ASSOCIATION LEXICON. Computational Intelligence, 29: 436-465. <a href="https://doi.org/10.1111/j.1467-8640.2012.00460.x" class="uri">https://doi.org/10.1111/j.1467-8640.2012.00460.x</a></p></li>
+</ul>
+</section>
+</section>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

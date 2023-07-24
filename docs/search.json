@@ -4,35 +4,42 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nHarlow Malloc\n\n\nJul 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nTristan O’Malley\n\n\nJul 19, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Seinfeld Scripts\n\n\nText analysis of scripts from the TV series Seinfeld\n\n\n\nBradford Johnson\n\n\nMar 13, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/project-posts/post-with-code/index.html",
-    "href": "posts/project-posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/blog-posts/welcome/index.html",
+    "href": "posts/blog-posts/welcome/index.html",
+    "title": "Why Quarto?",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "Some describe it as magic, and others have not used Quarto. I was introduced to Quarto as it was added to RStudio in an update in July 2022. Once I saw Thomas Mock’s talk Quarto for the curious I knew I had to explore Quarto. I would go into detail about the technical aspects of what Quarto does, but why not show what it can do? This very website is built with Quarto, and so is Quarto’s website.\n\n\nI built this site using RStuido as the environment, but if you prefer something like `VS Code` then you can use the Quarto extension. My site’s code lives in it’s own GitHub repository which you can view by clicking the code icon on the right side of the navigation bar…or here. I use GitHub for version control, but also host my site with GitHub Pages. I bought my domain name and it was simple to get it up and running from there.\nWhen I want to do some sprucing up to my site I create a new branch and edit the branch. Once I edit the files and code I will render my site in RStudio and then push the commits. Finally I will do a pull request and merge the branch with my main branch. GitHub Actions will then publish the site, however you do not need to do the branching. A single commit on the main branch will trigger GitHub Actions and update your site automatically. This means you can edit and publish the edits all from the code editor!\n\n\n\nQuarto documents .qmd are the files that you edit, and they have YAML code blocks at the top of the document that let you control different features such as: titles, what the output is, and many other controls. The output control is very special as you can render a file as .html output for webpages and many other formats! Do you need a slideshow? A .pdf report? A book?\nHere is what the YAML looks like for this blog post!\n---\ntitle: \"Why Quarto?\"\ndate: \"3/03/2023\"\ndescription: \"Why I build my website with Quarto...\"\ncategories: \"Quarto\"\nformat: html\neditor: visual\nhighlight-style: github\n---\nYou can create and run code chunks, this allows you to create reports, KPI dashboards, articles and so much more. I would describe Quarto as a way to share data analytics or knowledge in a meaningful and completely customized way. It is easily integrated into workflows, and you do not even have to know R. You can use Quarto with Python, Julia, Observable or R. Have a team of R users and Python users? They all can work together with Quarto, and even within the same document…\n\n\n\npaste0(R.Version()[c(\"major\",\"minor\")], collapse = \".\")\n\n[1] \"4.2.2\"\n\n\n\n\n\n\nimport sys\nprint(\"Python version\")\n\nPython version\n\nprint (sys.version)\n\n3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.1934 64 bit (AMD64)]\n\n\n\n\n\n#| warning: false\n#| message: false\n\nlibrary(tidyverse)\n\nggplot(data = iris, aes( x = Sepal.Length, y = Sepal.Width,\n                         shape = Species, color = Species)) +\n  geom_point()\n\n\n\n\n\nDid you notice in the code chunk the #|’s? This is how you tell the chunk how to behave, I stopped warnings and messages in that chunk. You can use Quarto as Jupyter notebooks or R Markdown notebooks and render those notebooks to your desired output. Another thing is that you can use a visual editor, all within your development environment, making it that much easier to make some beautiful deliverables or notes for yourself!"
   },
   {
-    "objectID": "posts/blog-posts/post-with-code/index.html",
-    "href": "posts/blog-posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/blog-posts/welcome/index.html#what-is-quarto",
+    "href": "posts/blog-posts/welcome/index.html#what-is-quarto",
+    "title": "Why Quarto?",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "Some describe it as magic, and others have not used Quarto. I was introduced to Quarto as it was added to RStudio in an update in July 2022. Once I saw Thomas Mock’s talk Quarto for the curious I knew I had to explore Quarto. I would go into detail about the technical aspects of what Quarto does, but why not show what it can do? This very website is built with Quarto, and so is Quarto’s website.\n\n\nI built this site using RStuido as the environment, but if you prefer something like `VS Code` then you can use the Quarto extension. My site’s code lives in it’s own GitHub repository which you can view by clicking the code icon on the right side of the navigation bar…or here. I use GitHub for version control, but also host my site with GitHub Pages. I bought my domain name and it was simple to get it up and running from there.\nWhen I want to do some sprucing up to my site I create a new branch and edit the branch. Once I edit the files and code I will render my site in RStudio and then push the commits. Finally I will do a pull request and merge the branch with my main branch. GitHub Actions will then publish the site, however you do not need to do the branching. A single commit on the main branch will trigger GitHub Actions and update your site automatically. This means you can edit and publish the edits all from the code editor!\n\n\n\nQuarto documents .qmd are the files that you edit, and they have YAML code blocks at the top of the document that let you control different features such as: titles, what the output is, and many other controls. The output control is very special as you can render a file as .html output for webpages and many other formats! Do you need a slideshow? A .pdf report? A book?\nHere is what the YAML looks like for this blog post!\n---\ntitle: \"Why Quarto?\"\ndate: \"3/03/2023\"\ndescription: \"Why I build my website with Quarto...\"\ncategories: \"Quarto\"\nformat: html\neditor: visual\nhighlight-style: github\n---\nYou can create and run code chunks, this allows you to create reports, KPI dashboards, articles and so much more. I would describe Quarto as a way to share data analytics or knowledge in a meaningful and completely customized way. It is easily integrated into workflows, and you do not even have to know R. You can use Quarto with Python, Julia, Observable or R. Have a team of R users and Python users? They all can work together with Quarto, and even within the same document…\n\n\n\npaste0(R.Version()[c(\"major\",\"minor\")], collapse = \".\")\n\n[1] \"4.2.2\"\n\n\n\n\n\n\nimport sys\nprint(\"Python version\")\n\nPython version\n\nprint (sys.version)\n\n3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.1934 64 bit (AMD64)]\n\n\n\n\n\n#| warning: false\n#| message: false\n\nlibrary(tidyverse)\n\nggplot(data = iris, aes( x = Sepal.Length, y = Sepal.Width,\n                         shape = Species, color = Species)) +\n  geom_point()\n\n\n\n\n\nDid you notice in the code chunk the #|’s? This is how you tell the chunk how to behave, I stopped warnings and messages in that chunk. You can use Quarto as Jupyter notebooks or R Markdown notebooks and render those notebooks to your desired output. Another thing is that you can use a visual editor, all within your development environment, making it that much easier to make some beautiful deliverables or notes for yourself!"
+  },
+  {
+    "objectID": "posts/blog-posts/welcome/index.html#so-why-quarto",
+    "href": "posts/blog-posts/welcome/index.html#so-why-quarto",
+    "title": "Why Quarto?",
+    "section": "So why Quarto?",
+    "text": "So why Quarto?\n\nLanguage agnostic for data teams\nHigh quality outputs, and many types of outputs\nFlexible workflows and ease of use\nIt is fun, and works via magic\n\nIf you are still not convinced…\n\nI encourage you to look into Quarto as it would take a dedicated blog to really do Quarto justice, as one post can only cover so much…\nHere’s a Quarto blog made with Quarto, by the Quarto team!"
   },
   {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nJul 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nJul 19, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Why Quarto?\n\n\n\nQuarto\n\n\n\nWhy I build my website with Quarto…\n\n\n\n\n\n\nMar 4, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "About this blog\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc."
+    "text": "I’m an experienced data analyst who is passionate about solving problems. I enjoy being able to tell a story with data, and help others see beyond the noise. I started off as a self-taught R developer and have since implemented additional tools like Python and SQL into my analytics workflow. This allows me to pick the best tool for the job at hand.\nI really like photography and hiking, I have\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc."
   },
   {
     "objectID": "index.html",
@@ -42,17 +49,38 @@
     "text": "As a driven and seasoned data analyst, I thrive on utilizing a diverse set of cutting-edge tools to transform raw data into actionable insights. With a passion for crafting tailor-made analytics solutions, I empower businesses to unlock the full potential of their data by employing the most effective methodologies. Let’s collaborate and harness the power of data to drive your success.\n\nWant to talk data?\n\n\n Email Me  Connect with Me\n\n\n\n\n\n\nSpecialties\n\n\n\n\n Data Visualization\n\n\nVisualizing data is more than just creating charts and graphs—it’s about communicating insights effectively. As a data visualization expert, I possess a unique blend of analytical skills and artistic flair to transform complex datasets into visually compelling and insightful representations.\n\n\n\n\n Data Storytelling\n\n\nEvery data story is unique, just like your business needs. I’ll work closely with you to understand your specific objectives, ensuring that the visualizations I create align with your goals and resonate with your audience. My custom-tailored approach ensures data insights are presented in the most impactful way.\n\n\n\n\n ETL Pipelines\n\n\nTired of manually managing data movements? Let me automate your ETL workflows and orchestrate data pipelines, freeing up your valuable time for more strategic tasks. I’ll set up automated data integration processes that efficiently handle data updates and keep your systems synchronized.\n\n\n\n\n Data Cleaning & Validation\n\n\nI implement advanced data validation methodologies to verify the accuracy and integrity of your data. Through rigorous testing and validation processes, I’ll ensure your data meets predefined rules and conforms to expected patterns, reducing the risk of erroneous conclusions.\n\n\n\n\n\nGallery"
   },
   {
-    "objectID": "posts/blog-posts/welcome/index.html",
-    "href": "posts/blog-posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/project-posts/seinfeld/index.html",
+    "href": "posts/project-posts/seinfeld/index.html",
+    "title": "Seinfeld Scripts",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Sentiment analysis of Seinfeld scripts\n\nPositive and negative sentiments across different lexicons\n\nIdentify “catchphrases”, common themes, and inside jokes\n\nWord frequency and relationships\n\nWord correlation\n\nHow are certain words related?\n\nWrangle and visualize insightful relationships…\n\n\n\n\n\n\n\nSeparate processes into dedicated R scripts and ‘stages’:\n\nIndividual R file for each data prep / wrangling / cleaning task\nSave wrangled and cleaned data frames as .csv’s\nLoad prepared data into dedicated visualization scripts\nSave individual visuals and final visuals\n\n\nThis workflow is done in stages for the following reasons:\n\nLighten the workload on a machine | lots of text in these data sets\nMaintain an organized work environment\nPrepared data can be saved and used in the future | version control\nErrors can be isolated\n\n\n\n\n\nunnest_tokens() | Separate text into rows of single words\nanti_join() | Drop uninteresting words (stop words)\nget_sentiment() | Evaluating 3 different lexicons:\n\nBing\nNRC\nAFINN\n\n\n\n\n\n\nBigrams: Pairs of consecutive words grouped by character with counts\n\n\nunnest_tokens(bigram) | Separate text into rows of two words\nfilter() | Remove common stop words and selected words\ncount() | Get counts of bigrams\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow to use lexicons and “tune” them for a specific need\nHow to filter words like stop words, and customize the lists of words\nUsing bigrams, trigrams, and correlation to identify common themes and trends\nHow to implement these methods to paint the bigger picture\n\n\n\n\n\n\n\nSeinfeld data\n\n\n\n\n\nFinn Årup Nielsen A new ANEW: Evaluation of a word list for sentiment analysis in microblogs. Proceedings of the ESWC2011 Workshop on ‘Making Sense of Microposts’: Big things come in small packages 718 in CEUR Workshop Proceedings 93-98. 2011 May. https://arxiv.org/abs/1103.2903.\nMinqing Hu and Bing Liu, “Mining and summarizing customer reviews.”, Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD-2004), 2004.\nMohammad, S.M. and Turney, P.D. (2013), CROWDSOURCING A WORD–EMOTION ASSOCIATION LEXICON. Computational Intelligence, 29: 436-465. https://doi.org/10.1111/j.1467-8640.2012.00460.x"
   },
   {
-    "objectID": "posts/project-posts/welcome/index.html",
-    "href": "posts/project-posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/project-posts/seinfeld/index.html#objectives",
+    "href": "posts/project-posts/seinfeld/index.html#objectives",
+    "title": "Seinfeld Scripts",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Sentiment analysis of Seinfeld scripts\n\nPositive and negative sentiments across different lexicons\n\nIdentify “catchphrases”, common themes, and inside jokes\n\nWord frequency and relationships\n\nWord correlation\n\nHow are certain words related?\n\nWrangle and visualize insightful relationships…"
+  },
+  {
+    "objectID": "posts/project-posts/seinfeld/index.html#methods",
+    "href": "posts/project-posts/seinfeld/index.html#methods",
+    "title": "Seinfeld Scripts",
+    "section": "",
+    "text": "Separate processes into dedicated R scripts and ‘stages’:\n\nIndividual R file for each data prep / wrangling / cleaning task\nSave wrangled and cleaned data frames as .csv’s\nLoad prepared data into dedicated visualization scripts\nSave individual visuals and final visuals\n\n\nThis workflow is done in stages for the following reasons:\n\nLighten the workload on a machine | lots of text in these data sets\nMaintain an organized work environment\nPrepared data can be saved and used in the future | version control\nErrors can be isolated\n\n\n\n\n\nunnest_tokens() | Separate text into rows of single words\nanti_join() | Drop uninteresting words (stop words)\nget_sentiment() | Evaluating 3 different lexicons:\n\nBing\nNRC\nAFINN\n\n\n\n\n\n\nBigrams: Pairs of consecutive words grouped by character with counts\n\n\nunnest_tokens(bigram) | Separate text into rows of two words\nfilter() | Remove common stop words and selected words\ncount() | Get counts of bigrams"
+  },
+  {
+    "objectID": "posts/project-posts/seinfeld/index.html#what-i-learned",
+    "href": "posts/project-posts/seinfeld/index.html#what-i-learned",
+    "title": "Seinfeld Scripts",
+    "section": "",
+    "text": "How to use lexicons and “tune” them for a specific need\nHow to filter words like stop words, and customize the lists of words\nUsing bigrams, trigrams, and correlation to identify common themes and trends\nHow to implement these methods to paint the bigger picture"
+  },
+  {
+    "objectID": "posts/project-posts/seinfeld/index.html#citations",
+    "href": "posts/project-posts/seinfeld/index.html#citations",
+    "title": "Seinfeld Scripts",
+    "section": "",
+    "text": "Seinfeld data\n\n\n\n\n\nFinn Årup Nielsen A new ANEW: Evaluation of a word list for sentiment analysis in microblogs. Proceedings of the ESWC2011 Workshop on ‘Making Sense of Microposts’: Big things come in small packages 718 in CEUR Workshop Proceedings 93-98. 2011 May. https://arxiv.org/abs/1103.2903.\nMinqing Hu and Bing Liu, “Mining and summarizing customer reviews.”, Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD-2004), 2004.\nMohammad, S.M. and Turney, P.D. (2013), CROWDSOURCING A WORD–EMOTION ASSOCIATION LEXICON. Computational Intelligence, 29: 436-465. https://doi.org/10.1111/j.1467-8640.2012.00460.x"
   }
 ]
