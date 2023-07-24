@@ -1,38 +1,30 @@
 project:
   type: website
   output-dir: docs
-  
+
 website:
   title: "Bradford Johnson"
-  favicon: favicon_io/favicon.ico
   navbar:
     pinned: true
     left:
-      - icon: house
-        text: "Home"
+      - text: "Home"
         href: index.qmd
-      - icon: folder2
-        href: projects.qmd
-      - icon: newspaper
-        href: blog.qmd
-      - icon: calendar-event
-        text: "TidyTuesday"
-        href: tidytuesday.qmd
-      - icon: file-person
-        text: "About"
-        href: about.qmd
-    right: 
-      - icon: code-square
-        href: "https://github.com/bradfordjohnson/quarto-portfolio"
+      - about.qmd
+      - projects.qmd
+      - blog.qmd
+    right:
+      - icon: linkedin
+        href: https://linkedin.com/in/bradford-ford-johnson
+      - icon: github
+        href: https://github.com/bradfordjohnson
   page-footer:
     left: "Created by [Bradford Johnson](https://github.com/bradfordjohnson) © 2023"
     right: "This website is built with ❤️ and [Quarto](https://quarto.org/){target=\"_blank\"}."
 smooth-scroll: true
-
 format:
   html:
     link-external-newwindow: true
-    theme: [simplex] # removed scss file for now
-    mainfont: Roboto
+    theme: "_variables.scss"
     css: styles.css
+
 editor: visual

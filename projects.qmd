@@ -1,11 +1,12 @@
 ---
 title: "Projects"
 listing:
-  contents: projects
+  contents: posts/project-posts
   sort: "date desc"
-  type: default
-  categories: true
+  type: grid
   sort-ui: false
-  filter-ui: false
+  filter-ui: true
 page-layout: full
+title-block-banner: "#31363D"
+title-block-banner-color: "#fbfbfb"
 ---

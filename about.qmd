@@ -1,62 +1,26 @@
 ---
-title: "Bradford Johnson"
+title: "About Me"
+title-block-banner: "#31363D"
+title-block-banner-color: "#fbfbfb"
+image: images/headshot.jpg
 about:
-  id: about-me
-  image: "images/static/headshot.jpg"
   template: trestles
-  image-width: 12em
-  image-shape: round
   links:
-    - text: "LinkedIn"
-      icon: linkedin
-      href: "https://www.linkedin.com/in/bradford-ford-johnson/"
-    - text: "GitHub"
-      icon: github
-      href: "https://github.com/bradfordjohnson"
-    - text: "Tableau"
-      icon: graph-up
-      href: "https://public.tableau.com/app/profile/bradfordjohnson"
-    - text: "Email"
-      icon: envelope
-      href: "mailto:bradfordljohnson@outlook.com"
-    - text: "Twitter"
-      icon: twitter
-      href: "https://twitter.com/bradfordj_"
-page-layout: full
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/bradfordj_
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/bradford-ford-johnson
+    - icon: github
+      text: Github
+      href: https://github.com/bradfordjohnson
 ---
 
-*Welcome! I'm an explorer of many realms: data analytics, IT, and sociology. I'm a self-taught R programmer, and visualization designer.*
+# About this blog
 
-*Also, I love dogs; Roxy🐕 & Ollie🐕.*
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc.
 
-::: panel-tabset
-# Specialties
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc.
 
--   Data Visualization & Dashboard Development
--   Data Cleaning & Statistical Analysis
--   Report Generation & Data Story Telling
-
-# Skills
-
-|                    |                      |                 |
-|:-------------------|:---------------------|:----------------|
-| SQL                | R                    | Python          |
-| Excel              | Tableau              | Quarto          |
-| Web Scraping       | Statistical Analysis | Data Wrangling  |
-| Data Visualization | GitHub               | Research Design |
-
-# Hobbies
-
--   👨‍💻 Programming
--   🌳⛰️ Hiking
--   📸 Photography
--   🗓️ [TidyTuesday!](https://github.com/rfordatascience/tidytuesday) - A weekly social data project in R
-:::
-
-::: panel-tabset
-# Education
-
-**Data Analytics** \| Thinkful \| *2022*
-
-**B.A. Sociology** \| Winthrop University \| *2021*
-:::
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc.

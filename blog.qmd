@@ -1,14 +1,13 @@
 ---
 title: "Blog"
 listing:
-  contents: blog
+  contents: posts/blog-posts
   sort: "date desc"
-  type: table
-  fields: [date, title]
+  type: grid
   categories: true
   sort-ui: false
   filter-ui: false
-  table-hover: true
-  date-format: short
 page-layout: full
+title-block-banner: "#31363D"
+title-block-banner-color: "#fbfbfb"
 ---
