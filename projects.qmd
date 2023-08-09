@@ -7,6 +7,6 @@ listing:
   sort-ui: false
   filter-ui: true
 page-layout: full
-title-block-banner: "#31363D"
-title-block-banner-color: "#fbfbfb"
+title-block-banner: "#555B6E"
+title-block-banner-color: "#FAF9F9"
 ---

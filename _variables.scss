@@ -29,7 +29,7 @@ $green:   #3fb618 !default;
 $teal:    #20c997 !default;
 $cyan:    #9954bb !default;
 
-$primary:       #CF2D36 !default;
+$primary:       #cb6d51 !default;
 $secondary:     $gray-800 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -46,7 +46,7 @@ $enable-rounded: false !default;
 
 // Body
 $body-color:    $gray-800 !default;
-$body-bg:       #fbfbfb !default;
+$body-bg:       #FAF9F9 !default;
 
 // Fonts
 
@@ -55,9 +55,9 @@ $font-family-sans-serif:    "Source Sans Pro", -apple-system, BlinkMacSystemFont
 $headings-font-weight:      400 !default;
 
 // Navbar
-$navbar-bg:                     #fbfbfb !default;
-$navbar-dark-hover-color:       rgba($white, 1) !default;
-$navbar-light-hover-color:      #CF2D36 !default;
+$navbar-bg:                     #FAF9F9 !default;
+$navbar-dark-hover-color:       #cb6d51 !default;
+$navbar-light-hover-color:      #cb6d51 !default;
 
 // Alerts
 

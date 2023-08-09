@@ -10,7 +10,7 @@
   font-size: 1em;
 }
 
-.cta-buttons {
+.c-buttons {
   display: flex;
   flex-wrap: wrap;
   max-width: 450px;
@@ -18,7 +18,7 @@
   margin-top: 25px;
 }
 
-.cta-buttons a {
+.c-buttons a {
   flex-grow: 1;
   display: inline-block;
   background-color: white;
@@ -34,9 +34,9 @@
   margin-bottom: 10px;
 }
 
-.cta-buttons a:hover {
-  background-color: #CF2D36;
-  color: #F7F8F6 !important;
+.c-buttons a:hover {
+  background-color: #cb6d51;
+  color: #FAF9F9 !important;
 }
 
 .bio-section {
@@ -77,7 +77,7 @@
     text-align: left;
   }
 
-  .cta-buttons {
+  .c-buttons {
     text-align: center;
   }
 

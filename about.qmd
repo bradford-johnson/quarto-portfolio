@@ -1,7 +1,7 @@
 ---
 title: "About Me"
-title-block-banner: "#31363D"
-title-block-banner-color: "#fbfbfb"
+title-block-banner: "#555B6E"
+title-block-banner-color: "#FAF9F9"
 image: images/headshot.jpg
 about:
   template: trestles
@@ -17,8 +17,6 @@ about:
       href: https://github.com/bradfordjohnson
 ---
 
-I'm an experienced data analyst who is passionate about solving problems. I enjoy being able to tell a story with data, and help others see beyond the noise. I started off as a self-taught R developer and have since implemented additional tools like Python and SQL into my analytics workflow. This allows me to pick the best tool for the job at hand.
+I'm an experienced data analyst who is passionate about solving problems. I started off as a self-taught R developer and have since implemented additional tools like Python and SQL into my analytics workflow. My experience ranges from dashboards and custom visuals to developing ETL pipelines.
 
-I really like photography and hiking, I have
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi ac justo tristique volutpat. Sed vitae magna ac ipsum dignissim laoreet eu id massa. Sed eu ligula vitae urna dictum ultrices eu eu nunc.
+I enjoy photography and hiking.

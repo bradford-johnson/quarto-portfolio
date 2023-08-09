@@ -1,7 +1,7 @@
 ---
 title: "Bradford Johnson"
-title-block-banner: "#31363D"
-title-block-banner-color: "#fbfbfb"
+title-block-banner: "#555B6E"
+title-block-banner-color: "#FAF9F9"
 format: 
   html:
     page-layout: full
@@ -16,13 +16,13 @@ filters:
 ::: bio-info
 <div>
 
-As a driven and seasoned data analyst, I thrive on utilizing a diverse set of cutting-edge tools to transform raw data into actionable insights. With a passion for crafting tailor-made analytics solutions, I empower businesses to unlock the full potential of their data by employing the most effective methodologies. Let's collaborate and harness the power of data to drive your success.
+Hello there! I'm a passionate data sensemaker, dedicated to untangling the threads of information that shape our world. I find joy in weaving together the threads of data, crafting meaningful insights that shed light on the bigger picture. Let's embark on an exciting journey of exploration through the data landscape!
 
 ::: prompt
-Want to talk data?
+Wanna talk data?
 :::
 
-::: cta-buttons
+::: c-buttons
 [{{< fa envelope >}} Email Me](mailto:bradfordljohnson@outlook.com) [{{< fa brands linkedin >}} Connect with Me](https://linkedin.com/in/bradford-ford-johnson)
 :::
 
