@@ -16,13 +16,13 @@ filters:
 ::: bio-info
 <div>
 
-Hello there! I'm a passionate data sensemaker, dedicated to untangling the threads of information that shape our world. I find joy in weaving together the threads of data, crafting meaningful insights that shed light on the bigger picture. Let's embark on an exciting journey of exploration through the data landscape!
+Hello there! I'm a data sensemaker, deeply passionate about uncovering valuable signals within the noise of our data. My aim is to translate complex data into compelling narratives, making it accessible and understandable for any audience.
 
 ::: prompt
-Wanna talk data?
+Ready to embark on this exciting journey together?
 :::
 
-::: c-buttons
+::: contact
 [{{< fa envelope >}} Email Me](mailto:bradfordljohnson@outlook.com) [{{< fa brands linkedin >}} Connect with Me](https://linkedin.com/in/bradford-ford-johnson)
 :::
 
@@ -41,7 +41,7 @@ Specialties
 ::: specialties
 ::: card
 ::: card-header
-### {{< fa chart-line >}} Data Visualization
+### {{< fa chart-line >}} \| Data Visualization
 :::
 
 ::: card-body
@@ -51,7 +51,7 @@ Visualizing data is more than just creating charts and graphs---it's about commu
 
 ::: card
 ::: card-header
-### {{< fa book-open >}} Data Storytelling
+### {{< fa book-open >}} \| Data Storytelling
 :::
 
 ::: card-body
@@ -61,7 +61,7 @@ Every data story is unique, just like your business needs. I'll work closely wit
 
 ::: card
 ::: card-header
-### {{< fa circle-nodes >}} ETL Pipelines
+### {{< fa circle-nodes >}} \| ETL Pipelines
 :::
 
 ::: card-body
@@ -71,7 +71,7 @@ Tired of manually managing data movements? Let me automate your ETL workflows an
 
 ::: card
 ::: card-header
-### {{< fa circle-check >}} Data Cleaning & Validation
+### {{< fa circle-check >}} \| Data Cleaning & Validation
 :::
 
 ::: card-body

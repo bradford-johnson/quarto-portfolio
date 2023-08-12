@@ -4,7 +4,7 @@ title-block-banner: "#555B6E"
 title-block-banner-color: "#FAF9F9"
 image: images/headshot.jpg
 about:
-  template: trestles
+  template: solana
   links:
     - icon: twitter
       text: Twitter
@@ -15,8 +15,22 @@ about:
     - icon: github
       text: Github
       href: https://github.com/bradfordjohnson
+format: 
+  html:
+    page-layout: full
+    anchor-sections: false
 ---
 
-I'm an experienced data analyst who is passionate about solving problems. I started off as a self-taught R developer and have since implemented additional tools like Python and SQL into my analytics workflow. My experience ranges from dashboards and custom visuals to developing ETL pipelines.
+I'm an experienced data analyst who is passionate about solving problems. I started off as a self-taught R developer and have since implemented additional tools like Python and SQL into my analytics workflow. My experience ranges from designing dashboards and custom visuals to developing ETL pipelines.
 
-I enjoy photography and hiking.
+## Experience
+
+**Kinertia, LLC** \| Junior Data Analyst \| May 2023 - present
+
+**TopGolf** \| IT Team Lead \| Oct 2022 - April 2023
+
+## Education
+
+**Data Analytics Bootcamp** \| Thinkful \| June 2022 - Dec 2022
+
+**B.A. in Sociology** \| Winthrop University \| August 2017 - December 2021

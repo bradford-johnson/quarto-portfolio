@@ -39,14 +39,28 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "I’m an experienced data analyst who is passionate about solving problems. I started off as a self-taught R developer and have since implemented additional tools like Python and SQL into my analytics workflow. My experience ranges from dashboards and custom visuals to developing ETL pipelines.\nI enjoy photography and hiking."
+    "text": "I’m an experienced data analyst who is passionate about solving problems. I started off as a self-taught R developer and have since implemented additional tools like Python and SQL into my analytics workflow. My experience ranges from designing dashboards and custom visuals to developing ETL pipelines."
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\nKinertia, LLC | Junior Data Analyst | May 2023 - present\nTopGolf | IT Team Lead | Oct 2022 - April 2023"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\nData Analytics Bootcamp | Thinkful | June 2022 - Dec 2022\nB.A. in Sociology | Winthrop University | August 2017 - December 2021"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Bradford Johnson",
     "section": "",
-    "text": "Hello there! I’m a passionate data sensemaker, dedicated to untangling the threads of information that shape our world. I find joy in weaving together the threads of data, crafting meaningful insights that shed light on the bigger picture. Let’s embark on an exciting journey of exploration through the data landscape!\n\nWanna talk data?\n\n\n Email Me  Connect with Me\n\n\n\n\n\n\nSpecialties\n\n\n\n\n Data Visualization\n\n\nVisualizing data is more than just creating charts and graphs—it’s about communicating insights effectively. As a data visualization expert, I possess a unique blend of analytical skills and artistic flair to transform complex datasets into visually compelling and insightful representations.\n\n\n\n\n Data Storytelling\n\n\nEvery data story is unique, just like your business needs. I’ll work closely with you to understand your specific objectives, ensuring that the visualizations I create align with your goals and resonate with your audience. My custom-tailored approach ensures data insights are presented in the most impactful way.\n\n\n\n\n ETL Pipelines\n\n\nTired of manually managing data movements? Let me automate your ETL workflows and orchestrate data pipelines, freeing up your valuable time for more strategic tasks. I’ll set up automated data integration processes that efficiently handle data updates and keep your systems synchronized.\n\n\n\n\n Data Cleaning & Validation\n\n\nI implement advanced data validation methodologies to verify the accuracy and integrity of your data. Through rigorous testing and validation processes, I’ll ensure your data meets predefined rules and conforms to expected patterns, reducing the risk of erroneous conclusions.\n\n\n\n\n\nGallery"
+    "text": "Hello there! I’m a data sensemaker, deeply passionate about uncovering valuable signals within the noise of our data. My aim is to translate complex data into compelling narratives, making it accessible and understandable for any audience.\n\nReady to embark on this exciting journey together?\n\n\n Email Me  Connect with Me\n\n\n\n\n\n\nSpecialties\n\n\n\n\n | Data Visualization\n\n\nVisualizing data is more than just creating charts and graphs—it’s about communicating insights effectively. As a data visualization expert, I possess a unique blend of analytical skills and artistic flair to transform complex datasets into visually compelling and insightful representations.\n\n\n\n\n | Data Storytelling\n\n\nEvery data story is unique, just like your business needs. I’ll work closely with you to understand your specific objectives, ensuring that the visualizations I create align with your goals and resonate with your audience. My custom-tailored approach ensures data insights are presented in the most impactful way.\n\n\n\n\n | ETL Pipelines\n\n\nTired of manually managing data movements? Let me automate your ETL workflows and orchestrate data pipelines, freeing up your valuable time for more strategic tasks. I’ll set up automated data integration processes that efficiently handle data updates and keep your systems synchronized.\n\n\n\n\n | Data Cleaning & Validation\n\n\nI implement advanced data validation methodologies to verify the accuracy and integrity of your data. Through rigorous testing and validation processes, I’ll ensure your data meets predefined rules and conforms to expected patterns, reducing the risk of erroneous conclusions.\n\n\n\n\n\nGallery"
   },
   {
     "objectID": "posts/project-posts/seinfeld/index.html",
