@@ -1,62 +1,40 @@
 ---
-title: "Bradford Johnson"
+title: "About Me"
+title-block-banner: "#555B6E"
+title-block-banner-color: "#FAF9F9"
+image: images/headshot.jpg
 about:
-  id: about-me
-  image: "images/static/headshot.jpg"
-  template: trestles
-  image-width: 12em
-  image-shape: round
+  template: solana
   links:
-    - text: "LinkedIn"
-      icon: linkedin
-      href: "https://www.linkedin.com/in/bradford-ford-johnson/"
-    - text: "GitHub"
-      icon: github
-      href: "https://github.com/bradfordjohnson"
-    - text: "Tableau"
-      icon: graph-up
-      href: "https://public.tableau.com/app/profile/bradfordjohnson"
-    - text: "Email"
-      icon: envelope
-      href: "mailto:bradfordljohnson@outlook.com"
-    - text: "Twitter"
-      icon: twitter
-      href: "https://twitter.com/bradfordj_"
-page-layout: full
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/bradfordj_
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/bradford-ford-johnson
+    - icon: github
+      text: Github
+      href: https://github.com/bradfordjohnson
+format: 
+  html:
+    page-layout: full
+    anchor-sections: false
 ---
 
-*Welcome! I'm an explorer of many realms: data analytics, IT, and sociology. I'm a self-taught R programmer, and visualization designer.*
+Greetings! I'm Bradford, and I've got a bit of a data obsession. It all began when I stumbled into the world of R and decided to make it my digital playground. Over time, I've added Python and SQL to my toolkit, turning data analysis into a symphony of code and insight.
 
-*Also, I love dogs; Roxy🐕 & Ollie🐕.*
+But let's get real—data isn't just about numbers; it's about stories waiting to be told. I love digging into the details, uncovering hidden trends, and presenting them in a way that sparks those 'aha' moments we all crave. There's something magical about turning data into actionable steps toward success.
 
-::: panel-tabset
-# Specialties
+When I'm not deep in data, you'll likely find me hiking. It's in those moments of exploring nature that I find my creativity recharging, bringing a fresh perspective to my analytical pursuits.
 
--   Data Visualization & Dashboard Development
--   Data Cleaning & Statistical Analysis
--   Report Generation & Data Story Telling
+## Experience
 
-# Skills
+**Kinertia, LLC** \| Junior Data Analyst \| May 2023 - present
 
-|                    |                      |                 |
-|:-------------------|:---------------------|:----------------|
-| SQL                | R                    | Python          |
-| Excel              | Tableau              | Quarto          |
-| Web Scraping       | Statistical Analysis | Data Wrangling  |
-| Data Visualization | GitHub               | Research Design |
+**TopGolf** \| IT Team Lead \| Oct 2022 - April 2023
 
-# Hobbies
+## Education
 
--   👨‍💻 Programming
--   🌳⛰️ Hiking
--   📸 Photography
--   🗓️ [TidyTuesday!](https://github.com/rfordatascience/tidytuesday) - A weekly social data project in R
-:::
+**Data Analytics Bootcamp** \| Thinkful \| June 2022 - Dec 2022
 
-::: panel-tabset
-# Education
-
-**Data Analytics** \| Thinkful \| *2022*
-
-**B.A. Sociology** \| Winthrop University \| *2021*
-:::
+**B.A. in Sociology** \| Winthrop University \| August 2017 - December 2021

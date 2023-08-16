@@ -1,4 +1,159 @@
 /* css styles */
-html {
-  font-family: Inter, SF Pro Display, -apple-system, sans-serif;
+
+.prompt {
+  padding-top: 20px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.about {
+  font-size: 1em;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 450px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.contact a {
+  flex-grow: 1;
+  display: inline-block;
+  background-color: white;
+  color: #282732;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.contact a:hover {
+  background-color: #FF521B;
+  color: #FAF9F9 !important;
+}
+
+.bio-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 1.2em !important;
+}
+
+.bio-info {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.headshot {
+  width: 400px !important;
+  margin-right: 20px;
+  clip-path: inset(0 0 0 0 round 50%);
+}
+
+.bio-info p {
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .bio-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-info {
+    margin: 40px 0;
+    width: 90% !important;
+    text-align: left;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .bio-info img {
+    margin-right: 0;
+  }
+}
+
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 40px);
+  min-width: 300px;
+}
+
+.card-header h3 {
+  margin: 0px;
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+.card-header img {
+  height: 50px;
+}
+
+.card-header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.card-body p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 800px) {
+  .specialties {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: middle !important;
+    align-items: center;
+  }
+}
+
+.navbar {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, .4);
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #ff521b;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active {
+    color: #FF521B;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(170,73,58);
+}
+
+div.quarto-about-solana .about-entity .about-link {
+    color: #555B6E;
 }

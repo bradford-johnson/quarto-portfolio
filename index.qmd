@@ -1,97 +1,105 @@
 ---
 title: "Bradford Johnson"
-page-layout: full
-listing: 
-  - id: landing-posts
-    contents: projects
-    type: default
-    max-items: 3
-    sort:
-      - "date desc"
-  - id: landing-posts-blog
-    contents: blog
-    type: table
-    max-items: 6
-    fields: [date, title]
-    table-hover: true
-    filter-ui: false
-    sort-ui: false
-    sort:
-      - "date desc"
-image: "images/static/headshot.jpg"
-about:
-  id: about-me
-  template: jolla
-  image-width: 12em
-  image-shape: round
-  links:
-    - text: "LinkedIn"
-      icon: linkedin
-      href: "https://www.linkedin.com/in/bradford-ford-johnson/"
-    - text: "GitHub"
-      icon: github
-      href: "https://github.com/bradfordjohnson"
-    - text: "Tableau"
-      icon: graph-up
-      href: "https://public.tableau.com/app/profile/bradfordjohnson"
-    - text: "Email"
-      icon: envelope
-      href: "mailto:bradfordljohnson@outlook.com"
-    - text: "Twitter"
-      icon: twitter
-      href: "https://twitter.com/bradfordj_"
+title-block-banner: "#555B6E"
+title-block-banner-color: "#FAF9F9"
+format: 
+  html:
+    page-layout: full
+    anchor-sections: false
+filters:
+   - lightbox
 ---
 
-::: {#about-me}
-::: column-page
-<center>**Data Analyst**</center>
+::: bio-section
+![](images/headshot.jpg){.headshot}
 
-::: {.callout-important appearance="minimal"}
-Interested in connecting or talking data? Use the buttons below to contact me!
-:::
-:::
-:::
-
-::: column-page
+::: bio-info
 <div>
 
-## {{< fa chart-column >}} Visual Gallery
+Hello there! I'm a data sensemaker, deeply passionate about uncovering valuable signals within the noise of our data. My aim is to translate complex data into compelling narratives, making it accessible and understandable for any audience.
 
-*Click on an image to view the `source code`!*
+::: prompt
+Ready to embark on this exciting journey together?
+:::
 
-<center>
-
-<p>[![](projects/seinfeld/images/01-seinfeld-sentiment.png){width="80%"}](https://github.com/bradfordjohnson/seinfeld-analysis/blob/main/scripts/sentiment/06-visualize-sentiment.R)</p>
-
-<p>[![](images/dynamic/forest.png){width="60%"}](https://github.com/bradfordjohnson/state-forests/blob/master/scripts/forest-hex.R) [![](images/dynamic/topgolf.png){width="36%"}](https://github.com/bradfordjohnson/topgolf-analytics/blob/main/scripts/05-field.R)</p>
-
-<p>[![](images/dynamic/foot.png){width="100%"}![](images/dynamic/foot.png){width="0%"}](https://github.com/bradfordjohnson/sql-soccer/blob/master/r/05-epl-foot.R)</p>
-
-<p>[![](images/dynamic/numbats.png){width="47%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-03-07/numbats.R) [![](images/dynamic/programming.png){width="47%"}](https://github.com/bradfordjohnson/tidytuesday/blob/main/2023/2023-03-21/programming.R)</p>
-
-</center>
+::: contact
+[{{< fa envelope >}} Email Me](mailto:bradfordljohnson@outlook.com) [{{< fa brands linkedin >}} Connect with Me](https://linkedin.com/in/bradford-ford-johnson)
+:::
 
 </div>
 :::
+:::
 
-::: column-page
-::: grid
-::: {.g-col-12 .g-col-md-6}
-## Projects
+------------------------------------------------------------------------
 
-Click [here](projects.qmd) to check out my latest projects.
+<h1 style="text-align:center;">
 
-::: {#landing-posts}
+Specialties
+
+</h1>
+
+::: specialties
+::: card
+::: card-header
+### {{< fa chart-line >}} \| Data Visualization
+:::
+
+::: card-body
+Visualizing data is more than just creating charts and graphs---it's about communicating insights effectively. As a data visualization expert, I possess a unique blend of analytical skills and artistic flair to transform complex datasets into visually compelling and insightful representations.
 :::
 :::
 
-::: {.g-col-12 .g-col-md-6}
-## Blog
+::: card
+::: card-header
+### {{< fa book-open >}} \| Data Storytelling
+:::
 
-Click [here](blog.qmd) see my latest blog posts.
+::: card-body
+Every data story is unique, just like your business needs. I'll work closely with you to understand your specific objectives, ensuring that the visualizations I create align with your goals and resonate with your audience. My custom-tailored approach ensures data insights are presented in the most impactful way.
+:::
+:::
 
-::: {#landing-posts-blog}
+::: card
+::: card-header
+### {{< fa circle-nodes >}} \| ETL Pipelines
+:::
+
+::: card-body
+Tired of manually managing data movements? Let me automate your ETL workflows and orchestrate data pipelines, freeing up your valuable time for more strategic tasks. I'll set up automated data integration processes that efficiently handle data updates and keep your systems synchronized.
+:::
+:::
+
+::: card
+::: card-header
+### {{< fa circle-check >}} \| Data Cleaning & Validation
+:::
+
+::: card-body
+I implement advanced data validation methodologies to verify the accuracy and integrity of your data. Through rigorous testing and validation processes, I'll ensure your data meets predefined rules and conforms to expected patterns, reducing the risk of erroneous conclusions.
 :::
 :::
 :::
+
+------------------------------------------------------------------------
+
+<h1 style="text-align:center;">
+
+Gallery
+
+</h1>
+
+::: visual-gallery
+<p>
+
+![](images/visuals/owid_energy.png){.lightbox group="gallery" width="65%"} ![](images/visuals/topgolf.png){.lightbox group="gallery" width="30%"}
+
+![](images/visuals/african-languages.png){.lightbox group="gallery" width="35%"} ![](images/visuals/seinfeld-sentiment.png){.lightbox group="gallery" width="60%"}
+
+![](images/visuals/safi.png){.lightbox group="gallery" width="55%"} ![](images/visuals/portal_project.png){.lightbox group="gallery" width="40%"}
+
+![](images/visuals/forest.png){.lightbox group="gallery" width="35%"} ![](images/visuals/goals-foot.png){.lightbox group="gallery" width="60%"}
+
+![](images/visuals/programming.png){.lightbox group="gallery" width="32%"} ![](images/visuals/numbats.png){.lightbox group="gallery" width="32%"} ![](images/visuals/soccer.png){.lightbox group="gallery" width="32%"}
+
+</p>
 :::
