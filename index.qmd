@@ -91,13 +91,15 @@ Gallery
 ::: visual-gallery
 <p>
 
-![](images/visuals/seinfeld-sentiment.png){.lightbox group="gallery" width="60%"} ![](images/visuals/topgolf.png){.lightbox group="gallery" width="30%"}
+![](images/visuals/owid_energy.png){.lightbox group="gallery" width="65%"} ![](images/visuals/topgolf.png){.lightbox group="gallery" width="30%"}
 
-![](images/visuals/african-languages.png){.lightbox group="gallery" width="30%"} ![](images/visuals/goals-foot.png){.lightbox group="gallery" width="60%"}
+![](images/visuals/african-languages.png){.lightbox group="gallery" width="35%"} ![](images/visuals/seinfeld-sentiment.png){.lightbox group="gallery" width="60%"}
 
-![](images/visuals/programming.png){.lightbox group="gallery" width="30%"} ![](images/visuals/portal_project.png){.lightbox group="gallery" width="30%"} ![](images/visuals/numbats.png){.lightbox group="gallery" width="30%"}
+![](images/visuals/safi.png){.lightbox group="gallery" width="55%"} ![](images/visuals/portal_project.png){.lightbox group="gallery" width="40%"}
 
-![](images/visuals/forest.png){.lightbox group="gallery" width="40%"}
+![](images/visuals/forest.png){.lightbox group="gallery" width="35%"} ![](images/visuals/goals-foot.png){.lightbox group="gallery" width="60%"}
+
+![](images/visuals/programming.png){.lightbox group="gallery" width="32%"} ![](images/visuals/numbats.png){.lightbox group="gallery" width="32%"} ![](images/visuals/soccer.png){.lightbox group="gallery" width="32%"}
 
 </p>
 :::
