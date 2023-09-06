@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Seinfeld Scripts\n\n\nText analysis of scripts from the TV series Seinfeld\n\n\n\nBradford Johnson\n\n\nMar 13, 2023\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "posts/blog-posts/welcome/index.html",
     "href": "posts/blog-posts/welcome/index.html",
     "title": "Why Quarto?",
@@ -26,41 +19,6 @@
     "title": "Why Quarto?",
     "section": "So why Quarto?",
     "text": "So why Quarto?\n\nLanguage agnostic for data teams\nHigh quality outputs, and many types of outputs\nFlexible workflows and ease of use\nIt is fun, and works via magic\n\nIf you are still not convinced…\n\nI encourage you to look into Quarto as it would take a dedicated blog to really do Quarto justice, as one post can only cover so much…\nHere’s a Quarto blog made with Quarto, by the Quarto team!"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Why Quarto?\n\n\n\nQuarto\n\n\n\nWhy I build my website with Quarto…\n\n\n\n\n\n\nMar 4, 2023\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "Greetings! I’m Bradford, and I’ve got a bit of a data obsession. It all began when I stumbled into the world of R and decided to make it my digital playground. Over time, I’ve added Python and SQL to my toolkit, turning data analysis into a symphony of code and insight.\nBut let’s get real—data isn’t just about numbers; it’s about stories waiting to be told. I love digging into the details, uncovering hidden trends, and presenting them in a way that sparks those ‘aha’ moments we all crave. There’s something magical about turning data into actionable steps toward success.\nWhen I’m not deep in data, you’ll likely find me hiking. It’s in those moments of exploring nature that I find my creativity recharging, bringing a fresh perspective to my analytical pursuits."
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "About Me",
-    "section": "Experience",
-    "text": "Experience\nKinertia, LLC | Junior Data Analyst | May 2023 - present\nTopGolf | IT Team Lead | Oct 2022 - April 2023"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\nData Analytics Bootcamp | Thinkful | June 2022 - Dec 2022\nB.A. in Sociology | Winthrop University | August 2017 - December 2021"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bradford Johnson",
-    "section": "",
-    "text": "Hello there! I’m a data sensemaker, deeply passionate about uncovering valuable signals within the noise of our data. My aim is to translate complex data into compelling narratives, making it accessible and understandable for any audience.\n\nReady to embark on this exciting journey together?\n\n\n Email Me  Connect with Me\n\n\n\n\n\n\nSpecialties\n\n\n\n\n | Data Visualization\n\n\nVisualizing data is more than just creating charts and graphs—it’s about communicating insights effectively. As a data visualization expert, I possess a unique blend of analytical skills and artistic flair to transform complex datasets into visually compelling and insightful representations.\n\n\n\n\n | Data Storytelling\n\n\nEvery data story is unique, just like your business needs. I’ll work closely with you to understand your specific objectives, ensuring that the visualizations I create align with your goals and resonate with your audience. My custom-tailored approach ensures data insights are presented in the most impactful way.\n\n\n\n\n | ETL Pipelines\n\n\nTired of manually managing data movements? Let me automate your ETL workflows and orchestrate data pipelines, freeing up your valuable time for more strategic tasks. I’ll set up automated data integration processes that efficiently handle data updates and keep your systems synchronized.\n\n\n\n\n | Data Cleaning & Validation\n\n\nI implement advanced data validation methodologies to verify the accuracy and integrity of your data. Through rigorous testing and validation processes, I’ll ensure your data meets predefined rules and conforms to expected patterns, reducing the risk of erroneous conclusions.\n\n\n\n\n\nGallery"
   },
   {
     "objectID": "posts/project-posts/seinfeld/index.html",
@@ -96,5 +54,47 @@
     "title": "Seinfeld Scripts",
     "section": "",
     "text": "Seinfeld data\n\n\n\n\n\nFinn Årup Nielsen A new ANEW: Evaluation of a word list for sentiment analysis in microblogs. Proceedings of the ESWC2011 Workshop on ‘Making Sense of Microposts’: Big things come in small packages 718 in CEUR Workshop Proceedings 93-98. 2011 May. https://arxiv.org/abs/1103.2903.\nMinqing Hu and Bing Liu, “Mining and summarizing customer reviews.”, Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD-2004), 2004.\nMohammad, S.M. and Turney, P.D. (2013), CROWDSOURCING A WORD–EMOTION ASSOCIATION LEXICON. Computational Intelligence, 29: 436-465. https://doi.org/10.1111/j.1467-8640.2012.00460.x"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Seinfeld Scripts\n\n\nText analysis of scripts from the TV series Seinfeld\n\n\n\nBradford Johnson\n\n\nMar 13, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bradford Johnson",
+    "section": "",
+    "text": "Hello there! I’m a data sensemaker, deeply passionate about uncovering valuable signals within the noise of our data. My aim is to translate complex data into compelling narratives, making it accessible and understandable for any audience.\n\nReady to embark on this exciting journey together?\n\n\n Email Me  Connect with Me\n\n\n\n\n\n\nSpecialties\n\n\n\n\n | Data Visualization\n\n\nVisualizing data is more than just creating charts and graphs—it’s about communicating insights effectively. As a data visualization expert, I possess a unique blend of analytical skills and artistic flair to transform complex datasets into visually compelling and insightful representations.\n\n\n\n\n | Data Storytelling\n\n\nEvery data story is unique, just like your business needs. I’ll work closely with you to understand your specific objectives, ensuring that the visualizations I create align with your goals and resonate with your audience. My custom-tailored approach ensures data insights are presented in the most impactful way.\n\n\n\n\n | ETL Pipelines\n\n\nTired of manually managing data movements? Let me automate your ETL workflows and orchestrate data pipelines, freeing up your valuable time for more strategic tasks. I’ll set up automated data integration processes that efficiently handle data updates and keep your systems synchronized.\n\n\n\n\n | Data Cleaning & Validation\n\n\nI implement advanced data validation methodologies to verify the accuracy and integrity of your data. Through rigorous testing and validation processes, I’ll ensure your data meets predefined rules and conforms to expected patterns, reducing the risk of erroneous conclusions.\n\n\n\n\n\nGallery"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Greetings! I’m Bradford, and I’ve got a bit of a data obsession. It all began when I stumbled into the world of R and decided to make it my digital playground. Over time, I’ve added Python and SQL to my toolkit, turning data analysis into a symphony of code and insight.\nBut let’s get real—data isn’t just about numbers; it’s about stories waiting to be told. I love digging into the details, uncovering hidden trends, and presenting them in a way that sparks those ‘aha’ moments we all crave. There’s something magical about turning data into actionable steps toward success.\nWhen I’m not deep in data, you’ll likely find me hiking. It’s in those moments of exploring nature that I find my creativity recharging, bringing a fresh perspective to my analytical pursuits."
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\nKinertia, LLC | Junior Data Analyst | May 2023 - present\nTopGolf | IT Team Lead | Oct 2022 - April 2023"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\nData Analytics Bootcamp | Thinkful | June 2022 - Dec 2022\nB.A. in Sociology | Winthrop University | August 2017 - December 2021"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Why Quarto?\n\n\n\nQuarto\n\n\n\nWhy I build my website with Quarto…\n\n\n\n\n\n\nMar 4, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

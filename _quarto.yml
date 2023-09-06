@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Bradford Johnson"
+  site-url: 'https://ford-johnson.com/'
   navbar:
     pinned: true
     left:
