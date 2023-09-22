@@ -3,6 +3,7 @@ title: "Why Quarto?"
 date: "3/04/2023"
 description: "Why I build my website with Quarto..."
 categories: "Quarto"
+image: "quarto.jpeg"
 format: html
 editor: visual
 highlight-style: github

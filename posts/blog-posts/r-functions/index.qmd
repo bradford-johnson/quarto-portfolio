@@ -1,0 +1,53 @@
+---
+title: "Creating a 'requirements.txt' Inspired Function"
+date: "9/21/2023"
+description: "Join me on a playful coding experiment where I create an R function inspired by Python's `requirements.txt`"
+categories: [R, Packages]
+image: "workspace.png"
+format: html
+editor: visual
+---
+
+# Exploring Cross-Language Inspiration:
+
+## An R Function Inspired by `requirements.txt`
+
+In the ever-evolving world of programming, versatility is key. As a developer, I've been delving deep into the world of Python virtual environments (venvs) lately, where each project gets its own pristine ecosystem of packages and dependencies. It's an organizational dream, ensuring that changes in one project won't disrupt the harmony of another.
+
+### The Fun Experiment:
+
+Recently, however, I decided to take a bit of a detour and dive into the world of R. I couldn't resist the urge to play around with R and see if I could create something inspired by my recent experience within Python virtual environments even if it didn't serve much of a practical purpose.
+
+The result? A modest **`freeze_requirements`** function. This piece of code takes a file path as input and generates a `requirements.txt` file within the current R project. Its purpose? Well, let's just say it's a playful experiment more than anything else. It lists the names of currently installed R packages along with their versions in a format that might remind you of Python's **`requirements.txt`**.
+
+``` r
+freeze_requirements <- function(path = "requirements.txt") {
+  if (!endsWith(path, ".txt")) {
+    path <- paste0(path, ".txt")
+    message("Appended '.txt' to the provided path.")
+  }
+  currently_installed <- data.frame(installed.packages(), row.names = NULL)
+
+  cols <- c("Package", "Version", "Priority")
+
+  requirements <- currently_installed[, cols, drop = FALSE]
+
+  requirements <- requirements[!grepl("base", requirements$Priority), ]
+
+  requirements <- requirements[, cols[1:2], drop = FALSE]
+
+  write.table(requirements, path, quote = FALSE, row.names = FALSE, sep = "\t")
+
+  if (file.exists(path)) {
+    return(paste0("Saved packages to ", path))
+  } else {
+    return(paste0("Oops! There was an error..."))
+  }
+}
+```
+
+The function checks if the provided path ends with `.txt` and appends it if necessary. Then, it gathers package information, filtering out any packages labeled as 'base' priority. It writes this information to the specified file path and provides a message to confirm success or offer assistance in case of any hiccups.
+
+### Conclusion:
+
+While not a groundbreaking workflow, this experiment allowed me to have a bit of fun at the intersection of two programming languages. In all seriousness, for more robust dependency management in R, tools like [**`renv`**](https://rstudio.github.io/renv/) are readily available and worth exploring.
