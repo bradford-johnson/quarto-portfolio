@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Seinfeld Scripts\n\n\nText analysis of scripts from the TV series Seinfeld\n\n\n\nBradford Johnson\n\n\nMar 13, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "posts/blog-posts/welcome/index.html",
     "href": "posts/blog-posts/welcome/index.html",
     "title": "Why Quarto?",
@@ -19,6 +26,55 @@
     "title": "Why Quarto?",
     "section": "So why Quarto?",
     "text": "So why Quarto?\n\nLanguage agnostic for data teams\nHigh quality outputs, and many types of outputs\nFlexible workflows and ease of use\nIt is fun, and works via magic\n\nIf you are still not convinced…\n\nI encourage you to look into Quarto as it would take a dedicated blog to really do Quarto justice, as one post can only cover so much…\nHere’s a Quarto blog made with Quarto, by the Quarto team!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bradford Johnson",
+    "section": "",
+    "text": "Hello there! I’m a data sensemaker, deeply passionate about uncovering valuable signals within the noise of our data. My aim is to translate complex data into compelling narratives, making it accessible and understandable for any audience.\n\nReady to embark on this exciting journey together?\n\n\n Email Me  Connect with Me\n\n\n\n\n\n\nSpecialties\n\n\n\n\n | Data Visualization\n\n\nVisualizing data is more than just creating charts and graphs—it’s about communicating insights effectively. As a data visualization expert, I possess a unique blend of analytical skills and artistic flair to transform complex datasets into visually compelling and insightful representations.\n\n\n\n\n | Data Storytelling\n\n\nEvery data story is unique, just like your business needs. I’ll work closely with you to understand your specific objectives, ensuring that the visualizations I create align with your goals and resonate with your audience. My custom-tailored approach ensures data insights are presented in the most impactful way.\n\n\n\n\n | ETL Pipelines\n\n\nTired of manually managing data movements? Let me automate your ETL workflows and orchestrate data pipelines, freeing up your valuable time for more strategic tasks. I’ll set up automated data integration processes that efficiently handle data updates and keep your systems synchronized.\n\n\n\n\n | Data Cleaning & Validation\n\n\nI implement advanced data validation methodologies to verify the accuracy and integrity of your data. Through rigorous testing and validation processes, I’ll ensure your data meets predefined rules and conforms to expected patterns, reducing the risk of erroneous conclusions.\n\n\n\n\n\nGallery"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Greetings! I’m Bradford, and I’ve got a bit of a data obsession. It all began when I stumbled into the world of R and decided to make it my digital playground. Over time, I’ve added Python and SQL to my toolkit, turning data analysis into a symphony of code and insight.\nBut let’s get real—data isn’t just about numbers; it’s about stories waiting to be told. I love digging into the details, uncovering hidden trends, and presenting them in a way that sparks those ‘aha’ moments we all crave. There’s something magical about turning data into actionable steps toward success.\nWhen I’m not deep in data, you’ll likely find me hiking. It’s in those moments of exploring nature that I find my creativity recharging, bringing a fresh perspective to my analytical pursuits."
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\nKinertia, LLC | Junior Data Analyst | May 2023 - present\nTopGolf | IT Team Lead | Oct 2022 - April 2023"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\nData Analytics Bootcamp | Thinkful | June 2022 - Dec 2022\nB.A. in Sociology | Winthrop University | August 2017 - December 2021"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Creating a ‘requirements.txt’ Inspired Function\n\n\n\nR\n\n\nPackages\n\n\n\nJoin me on a playful coding experiment where I create an R function inspired by Python’s requirements.txt\n\n\n\n\n\n\nSep 21, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Quarto?\n\n\n\nQuarto\n\n\n\nWhy I build my website with Quarto…\n\n\n\n\n\n\nMar 4, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/blog-posts/r-functions/index.html",
+    "href": "posts/blog-posts/r-functions/index.html",
+    "title": "Creating a ‘requirements.txt’ Inspired Function",
+    "section": "",
+    "text": "In the ever-evolving world of programming, versatility is key. As a developer, I’ve been delving deep into the world of Python virtual environments (venvs) lately, where each project gets its own pristine ecosystem of packages and dependencies. It’s an organizational dream, ensuring that changes in one project won’t disrupt the harmony of another.\n\n\nRecently, however, I decided to take a bit of a detour and dive into the world of R. I couldn’t resist the urge to play around with R and see if I could create something inspired by my recent experience within Python virtual environments even if it didn’t serve much of a practical purpose.\nThe result? A modest freeze_requirements function. This piece of code takes a file path as input and generates a requirements.txt file within the current R project. Its purpose? Well, let’s just say it’s a playful experiment more than anything else. It lists the names of currently installed R packages along with their versions in a format that might remind you of Python’s requirements.txt.\nfreeze_requirements &lt;- function(path = \"requirements.txt\") {\n  if (!endsWith(path, \".txt\")) {\n    path &lt;- paste0(path, \".txt\")\n    message(\"Appended '.txt' to the provided path.\")\n  }\n  currently_installed &lt;- data.frame(installed.packages(), row.names = NULL)\n\n  cols &lt;- c(\"Package\", \"Version\", \"Priority\")\n\n  requirements &lt;- currently_installed[, cols, drop = FALSE]\n\n  requirements &lt;- requirements[!grepl(\"base\", requirements$Priority), ]\n\n  requirements &lt;- requirements[, cols[1:2], drop = FALSE]\n\n  write.table(requirements, path, quote = FALSE, row.names = FALSE, sep = \"\\t\")\n\n  if (file.exists(path)) {\n    return(paste0(\"Saved packages to \", path))\n  } else {\n    return(paste0(\"Oops! There was an error...\"))\n  }\n}\nThe function checks if the provided path ends with .txt and appends it if necessary. Then, it gathers package information, filtering out any packages labeled as ‘base’ priority. It writes this information to the specified file path and provides a message to confirm success or offer assistance in case of any hiccups.\n\n\n\nWhile not a groundbreaking workflow, this experiment allowed me to have a bit of fun at the intersection of two programming languages. In all seriousness, for more robust dependency management in R, tools like renv are readily available and worth exploring."
+  },
+  {
+    "objectID": "posts/blog-posts/r-functions/index.html#an-r-function-inspired-by-requirements.txt",
+    "href": "posts/blog-posts/r-functions/index.html#an-r-function-inspired-by-requirements.txt",
+    "title": "Creating a ‘requirements.txt’ Inspired Function",
+    "section": "",
+    "text": "In the ever-evolving world of programming, versatility is key. As a developer, I’ve been delving deep into the world of Python virtual environments (venvs) lately, where each project gets its own pristine ecosystem of packages and dependencies. It’s an organizational dream, ensuring that changes in one project won’t disrupt the harmony of another.\n\n\nRecently, however, I decided to take a bit of a detour and dive into the world of R. I couldn’t resist the urge to play around with R and see if I could create something inspired by my recent experience within Python virtual environments even if it didn’t serve much of a practical purpose.\nThe result? A modest freeze_requirements function. This piece of code takes a file path as input and generates a requirements.txt file within the current R project. Its purpose? Well, let’s just say it’s a playful experiment more than anything else. It lists the names of currently installed R packages along with their versions in a format that might remind you of Python’s requirements.txt.\nfreeze_requirements &lt;- function(path = \"requirements.txt\") {\n  if (!endsWith(path, \".txt\")) {\n    path &lt;- paste0(path, \".txt\")\n    message(\"Appended '.txt' to the provided path.\")\n  }\n  currently_installed &lt;- data.frame(installed.packages(), row.names = NULL)\n\n  cols &lt;- c(\"Package\", \"Version\", \"Priority\")\n\n  requirements &lt;- currently_installed[, cols, drop = FALSE]\n\n  requirements &lt;- requirements[!grepl(\"base\", requirements$Priority), ]\n\n  requirements &lt;- requirements[, cols[1:2], drop = FALSE]\n\n  write.table(requirements, path, quote = FALSE, row.names = FALSE, sep = \"\\t\")\n\n  if (file.exists(path)) {\n    return(paste0(\"Saved packages to \", path))\n  } else {\n    return(paste0(\"Oops! There was an error...\"))\n  }\n}\nThe function checks if the provided path ends with .txt and appends it if necessary. Then, it gathers package information, filtering out any packages labeled as ‘base’ priority. It writes this information to the specified file path and provides a message to confirm success or offer assistance in case of any hiccups.\n\n\n\nWhile not a groundbreaking workflow, this experiment allowed me to have a bit of fun at the intersection of two programming languages. In all seriousness, for more robust dependency management in R, tools like renv are readily available and worth exploring."
   },
   {
     "objectID": "posts/project-posts/seinfeld/index.html",
@@ -54,47 +110,5 @@
     "title": "Seinfeld Scripts",
     "section": "",
     "text": "Seinfeld data\n\n\n\n\n\nFinn Årup Nielsen A new ANEW: Evaluation of a word list for sentiment analysis in microblogs. Proceedings of the ESWC2011 Workshop on ‘Making Sense of Microposts’: Big things come in small packages 718 in CEUR Workshop Proceedings 93-98. 2011 May. https://arxiv.org/abs/1103.2903.\nMinqing Hu and Bing Liu, “Mining and summarizing customer reviews.”, Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD-2004), 2004.\nMohammad, S.M. and Turney, P.D. (2013), CROWDSOURCING A WORD–EMOTION ASSOCIATION LEXICON. Computational Intelligence, 29: 436-465. https://doi.org/10.1111/j.1467-8640.2012.00460.x"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Seinfeld Scripts\n\n\nText analysis of scripts from the TV series Seinfeld\n\n\n\nBradford Johnson\n\n\nMar 13, 2023\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bradford Johnson",
-    "section": "",
-    "text": "Hello there! I’m a data sensemaker, deeply passionate about uncovering valuable signals within the noise of our data. My aim is to translate complex data into compelling narratives, making it accessible and understandable for any audience.\n\nReady to embark on this exciting journey together?\n\n\n Email Me  Connect with Me\n\n\n\n\n\n\nSpecialties\n\n\n\n\n | Data Visualization\n\n\nVisualizing data is more than just creating charts and graphs—it’s about communicating insights effectively. As a data visualization expert, I possess a unique blend of analytical skills and artistic flair to transform complex datasets into visually compelling and insightful representations.\n\n\n\n\n | Data Storytelling\n\n\nEvery data story is unique, just like your business needs. I’ll work closely with you to understand your specific objectives, ensuring that the visualizations I create align with your goals and resonate with your audience. My custom-tailored approach ensures data insights are presented in the most impactful way.\n\n\n\n\n | ETL Pipelines\n\n\nTired of manually managing data movements? Let me automate your ETL workflows and orchestrate data pipelines, freeing up your valuable time for more strategic tasks. I’ll set up automated data integration processes that efficiently handle data updates and keep your systems synchronized.\n\n\n\n\n | Data Cleaning & Validation\n\n\nI implement advanced data validation methodologies to verify the accuracy and integrity of your data. Through rigorous testing and validation processes, I’ll ensure your data meets predefined rules and conforms to expected patterns, reducing the risk of erroneous conclusions.\n\n\n\n\n\nGallery"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "Greetings! I’m Bradford, and I’ve got a bit of a data obsession. It all began when I stumbled into the world of R and decided to make it my digital playground. Over time, I’ve added Python and SQL to my toolkit, turning data analysis into a symphony of code and insight.\nBut let’s get real—data isn’t just about numbers; it’s about stories waiting to be told. I love digging into the details, uncovering hidden trends, and presenting them in a way that sparks those ‘aha’ moments we all crave. There’s something magical about turning data into actionable steps toward success.\nWhen I’m not deep in data, you’ll likely find me hiking. It’s in those moments of exploring nature that I find my creativity recharging, bringing a fresh perspective to my analytical pursuits."
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "About Me",
-    "section": "Experience",
-    "text": "Experience\nKinertia, LLC | Junior Data Analyst | May 2023 - present\nTopGolf | IT Team Lead | Oct 2022 - April 2023"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\nData Analytics Bootcamp | Thinkful | June 2022 - Dec 2022\nB.A. in Sociology | Winthrop University | August 2017 - December 2021"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Why Quarto?\n\n\n\nQuarto\n\n\n\nWhy I build my website with Quarto…\n\n\n\n\n\n\nMar 4, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

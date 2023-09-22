@@ -24,6 +24,7 @@ website:
 smooth-scroll: true
 format:
   html:
+    highlight-style: atom-one-light
     link-external-newwindow: true
     theme: "_variables.scss"
     css: styles.css

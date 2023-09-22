@@ -8,6 +8,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/blog-posts/r-functions/index.html",
       "/posts/blog-posts/welcome/index.html"
     ]
   }
