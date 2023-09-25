@@ -136,7 +136,10 @@ class IssueAPI(object):
             record_id,
             "?include=%s" % ",".join(include) if include else "",
         )
-        return url
+        return url # returning url as example
+                   # can add additional code for
+                   # getting data from API with
+                   # requests and returning it
 ```
 
 ### Using Both Classes

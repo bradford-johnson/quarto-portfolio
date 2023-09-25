@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -188,7 +188,7 @@ background: #555B6E;
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Packages">Packages <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="OOP">OOP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Packages">Packages <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Python">Python <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -199,18 +199,56 @@ background: #555B6E;
 
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="R,Packages" data-listing-date-sort="1695268800000" data-listing-file-modified-sort="1695341147313" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./posts/blog-posts/r-functions/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/blog-posts/r-functions/workspace.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Python,OOP" data-listing-date-sort="1695528000000" data-listing-file-modified-sort="1695603606870" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
+<div class="thumbnail">
+<p><a href="./posts/blog-posts/python-oop/index.html"> <img src="./posts/blog-posts/python-oop/sigmund-B-x4VaIriRc-unsplash.jpg" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/blog-posts/python-oop/index.html">
+<h3 class="no-anchor listing-title">
+Object-Oriented Programming with Python
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
+Python
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('OOP'); return false;">
+OOP
+</div>
+</div>
+<a href="./posts/blog-posts/python-oop/index.html">
+<div class="listing-description">
+<p>Exploring Python OOP: Code, Insights, and Discoveries.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/blog-posts/python-oop/index.html">
+<div class="listing-date">
+Sep 24, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="R,Packages" data-listing-date-sort="1695268800000" data-listing-file-modified-sort="1695603454046" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./posts/blog-posts/r-functions/index.html"> <img src="./posts/blog-posts/r-functions/workspace.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/blog-posts/r-functions/index.html">
+<h3 class="no-anchor listing-title">
 Creating a ‘requirements.txt’ Inspired Function
-</h5>
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
 R
@@ -219,50 +257,51 @@ R
 Packages
 </div>
 </div>
-<div class="card-text listing-description">
-Join me on a playful coding experiment where I create an R function inspired by Python’s <code>requirements.txt</code>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Sep 21, 2023
-</div>
-</div>
-</div>
+<a href="./posts/blog-posts/r-functions/index.html">
+<div class="listing-description">
+<p>Join me on a playful coding experiment where I create an R function inspired by Python’s <code>requirements.txt</code></p>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Quarto" data-listing-date-sort="1677906000000" data-listing-file-modified-sort="1695338994439" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
-<a href="./posts/blog-posts/welcome/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/blog-posts/welcome/quarto.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
+<div class="metadata">
+<a href="./posts/blog-posts/r-functions/index.html">
+<div class="listing-date">
+Sep 21, 2023
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Quarto" data-listing-date-sort="1677906000000" data-listing-file-modified-sort="1695338994439" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="thumbnail">
+<p><a href="./posts/blog-posts/welcome/index.html"> <img src="./posts/blog-posts/welcome/quarto.jpeg" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/blog-posts/welcome/index.html">
+<h3 class="no-anchor listing-title">
 Why Quarto?
-</h5>
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Quarto'); return false;">
 Quarto
 </div>
 </div>
-<div class="card-text listing-description">
-Why I build my website with Quarto…
+<a href="./posts/blog-posts/welcome/index.html">
+<div class="listing-description">
+<p>Why I build my website with Quarto…</p>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
+</a>
 </div>
+<div class="metadata">
+<a href="./posts/blog-posts/welcome/index.html">
 <div class="listing-date">
 Mar 4, 2023
 </div>
-</div>
-</div>
-</div>
 </a>
+</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
