@@ -1,13 +1,16 @@
 ---
 title: "Blog"
+format: 
+  html:
+    page-layout: full
 listing:
   contents: posts/blog-posts
   sort: "date desc"
-  type: grid
-  categories: true
+  type: default
   sort-ui: false
   filter-ui: false
-page-layout: full
+  grid-columns: 3
+  categories: true
 title-block-banner: "#555B6E"
 title-block-banner-color: "#FAF9F9"
 ---
