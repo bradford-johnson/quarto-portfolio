@@ -1,0 +1,162 @@
+---
+title: "Object-Oriented Programming with Python"
+date: "9/24/2023"
+description: "Exploring Python OOP: Code, Insights, and Discoveries."
+categories: [Python, OOP]
+image: "sigmund-B-x4VaIriRc-unsplash.jpg"
+format: html
+editor: visual
+---
+
+# Unlocking the Power of Object-Oriented Programming in Python
+
+As a data analyst venturing further into Python, the concepts of classes and Object-Oriented Programming (OOP) might initially appear as uncharted territory. In this blog post, I'll take you along on my journey, sharing personal insights and discoveries as I navigated this fascinating realm.
+
+Now, let's begin our exploration by demystifying classes and attributes through a fun example involving something we're all familiar with - a pencil.
+
+## Objects in Action: Understanding Classes with Pencils
+
+Starting with physical objects like pencils is a great way to grasp the concept of classes and objects in Object-Oriented Programming (OOP). These tangible objects often have easily identifiable attributes and behaviors, which can be translated into class attributes and methods in Python. For this example lets imagine our pencil is a classic yellow #2 graphite pencil with a pink eraser.
+
+Each attribute of the pencil corresponds to a characteristic of our class.
+
+-   **`color`** represents the color of our pencil, which is 'yellow' in this case.
+
+-   **`type`** signifies the type of pencil, and '#2 graphite' fits perfectly.
+
+-   **`eraser_color`** identifies the color of the eraser, and 'pink' suits our virtual pencil well.
+
+Now, let's create our **`Pencil`** class with these attributes and explore how to utilize them effectively in Python.
+
+``` python
+class Pencil:
+    def __init__(self, color, pencil_type, eraser_color):
+        self.color = color
+        self.type = pencil_type
+        self.eraser_color = eraser_color
+```
+
+In this example, we initialize the Pencil class with: itself, color, pencil_type, and eraser_color. Now we can create some instances using this class.
+
+``` python
+classic_pencil = Pencil("yellow", "#2 graphite", "pink")
+another_pencil = Pencil("blue", "#2 graphite", "white")
+```
+
+Then we can access our `classic_pencil`'s color via `print(classic_pencil.color)`.
+
+Of course the fun starts once you begin introducing methods to classes. For this example lets add some attributes such as sharpness and times used so we can start writing with our pencil. In addition to this, lets make the sharpness level decrease as it is used.
+
+``` python
+class Pencil:
+    def __init__(self, color, pencil_type, eraser_color):
+        self.color = color
+        self.type = pencil_type
+        self.eraser_color = eraser_color
+        self.sharpness = 100  # Sharpness is represented as a percentage
+        self.times_used = 0  # Initialize the times used counter
+
+    def sharpen(self):
+        """
+        Simulates sharpening the pencil.
+        """
+        self.sharpness = 100  # Sharpening restores full sharpness
+
+    def write(self, *kwargs):
+        """
+        Simulates writing with the pencil.
+        """
+        if self.sharpness > 0:
+            self.times_used += 1
+            self.sharpness -= self.times_used * 10  # Decrease sharpness based on times used
+            if self.sharpness < 0:
+                self.sharpness = 0
+            print(f"Wrote with the pencil. Sharpness: {self.sharpness}%")
+        else:
+            print("The pencil is dull. Please sharpen it.")
+```
+
+Now we can sharpen our `classic_pencil` with `classic_pencil.sharpen()` and begin to write with like so:
+
+``` python
+classic_pencil.write("Hello, world!")
+
+#>> Wrote with the pencil. Sharpness: 90%
+```
+
+## Practical Application of Classes: Working with an API
+
+Now that we've grasped the concept of classes and objects with our playful pencil example, let's pivot towards a real-world scenario. Imagine you're a data analyst working on a project that involves interacting with a remote server to fetch and manage data. In such cases, creating organized and reusable code becomes crucial.
+
+This is where the next classes **`API`** and **`IssueAPI`** come into play. These classes are designed to streamline communication with a remote server's API, making it more structured and efficient. They encapsulate the necessary functionality, just as we encapsulated attributes and behaviors in our pencil class.
+
+Let's explore how these classes work in practice and how they can simplify complex tasks like fetching data from a server. By the end of this section, you'll see how the principles of Object-Oriented Programming extend far beyond our initial pencil example, enabling you to tackle real-world data analysis challenges with confidence.
+
+### API Class
+
+We will start with our API class which will take in our credentials to be used with additional classes and methods. The `API` class is initialized with a `domain` and an `api_key`, forming a base URL for API requests and connecting to an `IssueAPI` instance for issue-related operations. It also includes a domain validation check, raising an error if "example.com" is not found in the domain, indicating that the Example API is only compatible with specific domains.
+
+``` python
+class API(object):
+    def __init__(self, domain, api_key):
+        self._api_prefix = "https://{}/api/".format(domain.rstrip("/"))
+        self._api_key = api_key
+        self.issues = IssueAPI(self)
+
+        # removed other attributes and methods for brevity
+
+        if domain.find("example.com") < 0:
+            """
+            This checks if the domain has "example.com" in it. If it doesn't, it raises an error.
+
+            If it is found, it will return the index of the first occurrence of "example.com" in the string.
+
+            If it is not found, it will return -1 which is less than 0 and will raise an error.
+            """
+            raise AttributeError(
+                "Example API works only via Example"
+                "domains and not via custom CNAMEs"
+            )
+        self.domain = domain
+```
+
+### IssueAPI Class
+
+Now that we've explored how the **`API`** class provides the foundation for interacting with a remote API, let's delve into the **`IssueAPI`** class. This specialized class is designed to handle specific functionalities related to issues within the context of our API. It encapsulates methods for tasks like retrieving issue data, enabling you to work with issue-related information seamlessly.
+
+The **`IssueAPI`** class is an essential component of our API framework. It's responsible for handling operations that are specific to issues. This separation of concerns follows the principles of Object-Oriented Programming (OOP), making our code more organized and modular. In the upcoming sections, we'll explore the methods provided by the **`IssueAPI`** class and see how they simplify working with issue data, ensuring that your data analysis tasks are both efficient and manageable.
+
+``` python
+class IssueAPI(object):
+    def __init__(self, api):
+        self._api = api
+
+    def get_issue(self, record_id, *include):
+        url = "url/%d%s" % (
+            record_id,
+            "?include=%s" % ",".join(include) if include else "",
+        )
+        return url
+```
+
+### Using Both Classes
+
+In this code snippet, we begin by creating an instance of the **`API`** class named **`a`**. This instance is configured with the domain "myapi.example.com" and an API key.
+
+Next, we access the **`issues`** attribute of the **`API`** instance **`a`**, which is an instance of the **`IssueAPI`** class. We call the **`get_issue`** method with arguments to fetch data for issue ID 1, and here's where the **`*include`** parameter comes into play. The **`*include`** parameter allows us to dynamically specify what additional data we want to include in the request. In this example, we've included "x," "y," and "z" as parameters. This is where you could add different parameters to the URL to retrieve additional or specific data based on your needs. For example the "x" can be replaced with the parameter "stats" which tells the API to include all stats in the response.
+
+The result of this method call is stored in the variable **`issue_1`**, and we print its value, displaying the outcome of the **`get_issue`** method, which could be a constructed URL or issue-related data. This code illustrates how both classes work together to facilitate remote data interaction in a flexible and organized manner, allowing you to customize the data you retrieve from the API.
+
+``` python
+a = API("myapi.example.com", "apikey")
+
+issue_1 = a.issues.get_issue(1, "x", "y", "z")
+
+print(issue_1)
+```
+
+With our journey through the **`API`** and **`IssueAPI`** classes complete, let's wrap up our exploration of Object-Oriented Programming in Python and reflect on the valuable lessons learned.
+
+## Embracing the Power of Object-Oriented Programming
+
+To conclude, this exploration of Object-Oriented Programming (OOP) in Python has been a fulfilling journey. From grasping the fundamental concepts to applying them in practical scenarios such as data analysis and API interaction, the learning experience has been invaluable. OOP's ability to organize code into neat, reusable components is both impressive and empowering. As you continue to delve into the world of OOP, remember that each class you create is like a building block, allowing you to construct intricate and efficient solutions. Embrace this newfound skill, and you'll find that your programming journey is filled with endless opportunities and exciting challenges.
