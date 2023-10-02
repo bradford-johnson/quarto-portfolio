@@ -5,7 +5,7 @@ project:
 website:
   title: "Bradford Johnson"
   site-url: 'https://ford-johnson.com/'
-  favicon: "images/favicon-32x32.png"
+  favicon: "images/favicon.png"
   navbar:
     pinned: true
     left:
