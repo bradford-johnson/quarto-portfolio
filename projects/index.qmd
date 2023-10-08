@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 listing:
-  contents: posts/project-posts
+  contents: listings
   sort: "date desc"
   type: grid
   sort-ui: false
