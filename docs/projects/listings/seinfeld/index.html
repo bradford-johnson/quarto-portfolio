@@ -6,10 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-03-03">
-<meta name="description" content="Why I build my website with Quarto…">
+<meta name="author" content="Bradford Johnson">
+<meta name="dcterms.date" content="2023-03-13">
+<meta name="description" content="Text analysis of scripts from the TV series Seinfeld">
 
-<title>Bradford Johnson - Why Quarto?</title>
+<title>Bradford Johnson - Seinfeld Scripts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -96,6 +63,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="canonical" href="https://WWW.ford-johnson.com/">
 
 
 <link rel="stylesheet" href="../../../styles.css">
@@ -123,15 +91,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../about.html" rel="" target="">
- <span class="menu-text">About Me</span></a>
+    <a class="nav-link" href="../../../about/index.html" rel="" target="">
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../projects.html" rel="" target="">
+    <a class="nav-link" href="../../../projects/index.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../blog.html" rel="" target="">
+    <a class="nav-link" href="../../../blog/index.html" rel="" target="">
  <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -157,26 +125,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Why Quarto?</h1>
+      <h1 class="title">Seinfeld Scripts</h1>
                   <div>
         <div class="description">
-          Why I build my website with Quarto…
+          Text analysis of scripts from the TV series Seinfeld
         </div>
       </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">Quarto</div>
-              </div>
-                  </div>
+                </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Bradford Johnson </p>
+            </div>
+    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 3, 2023</p>
+        <p class="date">March 13, 2023</p>
       </div>
     </div>
     
@@ -189,88 +160,129 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
 
-<section id="what-is-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-quarto">What is Quarto?</h2>
-<p>Some describe it as magic, and others have not used Quarto. I was introduced to Quarto as it was added to RStudio in an update in July 2022. Once I saw Thomas Mock’s talk <a href="https://posit.co/talks/quarto-for-rmarkdown-users/">Quarto for the curious</a> I knew I had to explore Quarto. I would go into detail about the technical aspects of what Quarto does, but why not show what it can do? This very website is built with Quarto, and so is <a href="https://quarto.org/">Quarto’s website</a>.</p>
-<section id="my-website-workflow" class="level3">
-<h3 class="anchored" data-anchor-id="my-website-workflow">My website workflow</h3>
-<p>I built this site using RStuido as the environment, but if you prefer something like `VS Code` then you can use the Quarto <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">extension</a>. My site’s code lives in it’s own GitHub repository which you can view by clicking the code icon on the right side of the navigation bar…or <a href="https://github.com/bradfordjohnson/quarto-portfolio">here</a>. I use GitHub for version control, but also host my site with GitHub Pages. I bought my domain name and it was simple to get it up and running from there.</p>
-<p>When I want to do some <strong>sprucing up</strong> to my site I create a new branch and edit the branch. Once I edit the files and code I will render my site in RStudio and then push the commits. Finally I will do a pull request and merge the branch with my main branch. GitHub Actions will then publish the site, however you do not need to do the branching. A single commit on the main branch will trigger GitHub Actions and update your site automatically. This means you can edit and publish the edits all from the <strong>code editor</strong>!</p>
-</section>
-<section id="back-to-quarto" class="level3">
-<h3 class="anchored" data-anchor-id="back-to-quarto">Back to Quarto</h3>
-<p>Quarto documents <code>.qmd</code> are the files that you edit, and they have <code>YAML</code> code blocks at the top of the document that let you control different features such as: titles, what the output is, and many other controls. The output control is very special as you can render a file as <code>.html</code> output for webpages and many other formats! Do you need a slideshow? A <code>.pdf</code> report? A book?</p>
-<p>Here is what the YAML looks like for this blog post!</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Why Quarto?"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"3/03/2023"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"Why I build my website with Quarto..."</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">editor</span><span class="kw">:</span><span class="at"> visual</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">highlight-style</span><span class="kw">:</span><span class="at"> github</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You can create and run code chunks, this allows you to create reports, KPI dashboards, articles and so much more. I would describe Quarto as a way to share data analytics or knowledge in a meaningful and completely customized way. It is easily integrated into workflows, and you do not even have to know <code>R</code>. You can use Quarto with <code>Python</code>, <code>Julia</code>, <code>Observable</code> or <code>R</code>. Have a team of <code>R</code> users and <code>Python</code> users? They all can work together with Quarto, and even within the same document…</p>
-<section id="r-code-chunk" class="level4">
-<h4 class="anchored" data-anchor-id="r-code-chunk">R Code Chunk</h4>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste0</span>(<span class="fu">R.Version</span>()[<span class="fu">c</span>(<span class="st">"major"</span>,<span class="st">"minor"</span>)], <span class="at">collapse =</span> <span class="st">"."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "4.2.2"</code></pre>
-</div>
-</div>
-</section>
-<section id="python-code-chunk" class="level4">
-<h4 class="anchored" data-anchor-id="python-code-chunk">Python Code Chunk</h4>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Python version"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Python version</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span> (sys.version)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.1934 64 bit (AMD64)]</code></pre>
-</div>
-</div>
-</section>
-<section id="how-about-some-code-that-makes-a-basic-visual" class="level4">
-<h4 class="anchored" data-anchor-id="how-about-some-code-that-makes-a-basic-visual">How about some code that makes a basic visual?</h4>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> iris, <span class="fu">aes</span>( <span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width,</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>                         <span class="at">shape =</span> Species, <span class="at">color =</span> Species)) <span class="sc">+</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p>Did you notice in the code chunk the <code>#|</code>’s? This is how you tell the chunk how to behave, I stopped warnings and messages in that chunk. You can use Quarto as <strong>Jupyter notebooks</strong> or <strong>R Markdown notebooks</strong> and render those notebooks to your desired output. Another thing is that you can use a visual editor, all within your development environment, making it that much easier to make some beautiful deliverables or notes for yourself!</p>
-</section>
-</section>
-</section>
-<section id="so-why-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="so-why-quarto">So why Quarto?</h2>
+<section id="seinfeld-text-analysis-using-r" class="level1 page-columns page-full">
+<h1>Seinfeld Text Analysis using <code>R</code></h1>
+<div class="column-page-inset">
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
 <ul>
-<li><p><strong>Language agnostic</strong> for data teams</p></li>
-<li><p><strong>High quality outputs</strong>, and <strong>many types</strong> of outputs</p></li>
-<li><p><strong>Flexible workflows</strong> and ease of use</p></li>
-<li><p>It is fun, and works via <strong>magic</strong></p></li>
+<li><strong>Sentiment analysis of Seinfeld scripts</strong>
+<ul>
+<li>Positive and negative sentiments across different lexicons</li>
+</ul></li>
+<li><strong>Identify “catchphrases”, common themes, and inside jokes</strong>
+<ul>
+<li>Word frequency and relationships</li>
+</ul></li>
+<li><strong>Word correlation</strong>
+<ul>
+<li>How are certain words related?</li>
+</ul></li>
+<li><strong>Wrangle and visualize insightful relationships</strong>…</li>
 </ul>
-<p>If you are still not convinced…</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<section id="the-data-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="the-data-workflow">The Data Workflow</h3>
+<ul>
+<li>Separate processes into dedicated <code>R</code> scripts and ‘<em>stages</em>’:
+<ul>
+<li>Individual <code>R</code> file for each data prep / wrangling / cleaning task</li>
+<li>Save wrangled and cleaned data frames as <code>.csv</code>’s</li>
+<li>Load prepared data into dedicated visualization scripts</li>
+<li>Save individual visuals and final visuals</li>
+</ul></li>
+</ul>
+<p><strong>This workflow is done in stages for the following reasons:</strong></p>
+<ul>
+<li><p>Lighten the workload on a machine | <em>lots of text in these data sets</em></p></li>
+<li><p>Maintain an organized work environment</p></li>
+<li><p>Prepared data can be saved and used in the future | <em>version control</em></p></li>
+<li><p>Errors can be isolated</p></li>
+</ul>
+</section>
+<section id="sentiment-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="sentiment-analysis">Sentiment Analysis</h3>
+<ul>
+<li><p><code>unnest_tokens()</code> | Separate <em>text into rows of single words</em></p></li>
+<li><p><code>anti_join()</code> | <em>Drop uninteresting words (stop words)</em></p></li>
+<li><p><code>get_sentiment()</code> | <em>Evaluating 3 different lexicons:</em></p>
+<ul>
+<li><p>Bing</p></li>
+<li><p>NRC</p></li>
+<li><p>AFINN</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="bigrams" class="level3">
+<h3 class="anchored" data-anchor-id="bigrams">Bigrams</h3>
 <blockquote class="blockquote">
-<p>I encourage you to look into Quarto as it would take a dedicated blog to really do Quarto justice, as one post can only cover so much…</p>
-<p><a href="https://quarto.org/docs/blog/">Here’s a Quarto blog</a> made with Quarto, by the Quarto team!</p>
+<p><strong>Bigrams:</strong> Pairs of consecutive words grouped by character with counts</p>
 </blockquote>
+<ul>
+<li><code>unnest_tokens(bigram)</code> | Separate <em>text into rows of two words</em></li>
+<li><code>filter()</code> | <em>Remove common stop words and selected words</em></li>
+<li><code>count()</code> | <em>Get counts of bigrams</em></li>
+</ul>
+</section>
+</section>
+<section id="visuals" class="level2">
+<h2 class="anchored" data-anchor-id="visuals">Visuals</h2>
+<section id="sentiment-raincloud" class="level3">
+<h3 class="anchored" data-anchor-id="sentiment-raincloud">Sentiment Raincloud</h3>
+<p align="center">
+</p><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/bradfordjohnson/seinfeld-analysis/blob/main/scripts/sentiment/06-visualize-sentiment.R"><img src="01-seinfeld-sentiment.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<p></p>
+<hr>
+</section>
+<section id="bigrams-1" class="level3">
+<h3 class="anchored" data-anchor-id="bigrams-1">Bigrams</h3>
+<p align="center">
+</p><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/bradfordjohnson/seinfeld-analysis/blob/main/scripts/grams/03-visualize-bi.R"><img src="02-seinfeld-bigrams.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+<p></p>
+</section>
+</section>
+<section id="what-i-learned" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-learned">What I Learned</h2>
+<ul>
+<li><p>How to use lexicons and “tune” them for a specific need</p></li>
+<li><p>How to filter words like stop words, and customize the lists of words</p></li>
+<li><p>Using <code>bigrams</code>, <code>trigrams</code>, and <code>correlation</code> to identify common themes and trends</p></li>
+<li><p>How to implement these methods to paint the bigger picture</p></li>
+</ul>
+</section>
+<section id="citations" class="level2">
+<h2 class="anchored" data-anchor-id="citations">Citations</h2>
+<section id="data" class="level3">
+<h3 class="anchored" data-anchor-id="data">Data</h3>
+<ul>
+<li><a href="https://www.kaggle.com/datasets/thec03u5/seinfeld-chronicles">Seinfeld data</a></li>
+</ul>
+</section>
+<section id="lexicons" class="level3">
+<h3 class="anchored" data-anchor-id="lexicons">Lexicons</h3>
+<ul>
+<li><p>Finn Årup Nielsen A new ANEW: Evaluation of a word list for sentiment analysis in microblogs. Proceedings of the ESWC2011 Workshop on ‘Making Sense of Microposts’: Big things come in small packages 718 in CEUR Workshop Proceedings 93-98. 2011 May. <a href="https://arxiv.org/abs/1103.2903" class="uri">https://arxiv.org/abs/1103.2903</a>.</p></li>
+<li><p>Minqing Hu and Bing Liu, “Mining and summarizing customer reviews.”, Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining (KDD-2004), 2004.</p></li>
+<li><p>Mohammad, S.M. and Turney, P.D. (2013), CROWDSOURCING A WORD–EMOTION ASSOCIATION LEXICON. Computational Intelligence, 29: 436-465. <a href="https://doi.org/10.1111/j.1467-8640.2012.00460.x" class="uri">https://doi.org/10.1111/j.1467-8640.2012.00460.x</a></p></li>
+</ul>
+</section>
+</section>
+</div>
 
 
 </section>

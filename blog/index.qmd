@@ -4,7 +4,7 @@ format:
   html:
     page-layout: full
 listing:
-  contents: posts/blog-posts
+  contents: posts
   sort: "date desc"
   type: default
   sort-ui: false

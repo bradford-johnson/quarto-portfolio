@@ -2,7 +2,7 @@
 title: "About Me"
 title-block-banner: "#555B6E"
 title-block-banner-color: "#FAF9F9"
-image: images/headshot.jpg
+image: ../images/headshot.jpg
 about:
   template: solana
   links:
@@ -23,7 +23,7 @@ format:
 
 Greetings! I'm Bradford, and I've got a bit of a data obsession. It all began when I stumbled into the world of R and decided to make it my digital playground. Over time, I've added Python and SQL to my toolkit, turning data analysis into a symphony of code and insight.
 
-But let's get real—data isn't just about numbers; it's about stories waiting to be told. I love digging into the details, uncovering hidden trends, and presenting them in a way that sparks those 'aha' moments we all crave. There's something magical about turning data into actionable steps toward success.
+But let's get real---data isn't just about numbers; it's about stories waiting to be told. I love digging into the details, uncovering hidden trends, and presenting them in a way that sparks those 'aha' moments we all crave. There's something magical about turning data into actionable steps toward success.
 
 When I'm not deep in data, you'll likely find me hiking. It's in those moments of exploring nature that I find my creativity recharging, bringing a fresh perspective to my analytical pursuits.
 

@@ -11,9 +11,12 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - about.qmd
-      - projects.qmd
-      - blog.qmd
+      - text: "About"
+        href: about/index.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "Blog"
+        href: blog/index.qmd
     right:
       - icon: linkedin
         href: https://linkedin.com/in/bradford-ford-johnson
@@ -25,6 +28,9 @@ website:
 smooth-scroll: true
 format:
   html:
+    include-in-header:
+      - text: |
+          <link rel="canonical" href="https://WWW.ford-johnson.com/">
     highlight-style: atom-one-light
     link-external-newwindow: true
     theme: "_variables.scss"

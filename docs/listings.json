@@ -1,16 +1,16 @@
 [
   {
-    "listing": "/projects.html",
+    "listing": "/blog/index.html",
     "items": [
-      "/posts/project-posts/seinfeld/index.html"
+      "/blog/posts/python-oop/index.html",
+      "/blog/posts/r-functions/index.html",
+      "/blog/posts/welcome/index.html"
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/projects/index.html",
     "items": [
-      "/posts/blog-posts/python-oop/index.html",
-      "/posts/blog-posts/r-functions/index.html",
-      "/posts/blog-posts/welcome/index.html"
+      "/projects/listings/seinfeld/index.html"
     ]
   }
 ]
