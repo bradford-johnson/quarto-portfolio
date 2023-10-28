@@ -95,7 +95,7 @@ Gallery
 
 ![](images/visuals/african-languages.png){.lightbox group="gallery" width="35%"} ![](images/visuals/seinfeld-sentiment.png){.lightbox group="gallery" width="60%"}
 
-![](images/visuals/safi.png){.lightbox group="gallery" width="55%"} ![](images/visuals/portal_project.png){.lightbox group="gallery" width="40%"}
+![](images/visuals/us-states.png){.lightbox group="gallery" width="55%"} ![](images/visuals/portal_project.png){.lightbox group="gallery" width="40%"}
 
 ![](images/visuals/forest.png){.lightbox group="gallery" width="35%"} ![](images/visuals/goals-foot.png){.lightbox group="gallery" width="60%"}
 
