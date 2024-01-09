@@ -7,7 +7,10 @@ project:
 website:
   title: "Bradford Johnson"
   site-url: 'https://ford-johnson.com/'
-  google-analytics: "G-1BB9B4C1GN"
+  google-analytics: 
+    tracking-id: "G-1BB9B4C1GN"
+    storage: "cookies"
+  cookie-consent: true
   favicon: "images/favicon.png"
   navbar:
     pinned: true
