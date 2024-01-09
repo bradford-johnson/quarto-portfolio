@@ -7,6 +7,7 @@ project:
 website:
   title: "Bradford Johnson"
   site-url: 'https://ford-johnson.com/'
+  google-analytics: "G-1BB9B4C1GN"
   favicon: "images/favicon.png"
   navbar:
     pinned: true

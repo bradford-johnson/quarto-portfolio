@@ -101,5 +101,6 @@ Gallery
 
 ![](images/visuals/programming.png){.lightbox group="gallery" width="32%"} ![](images/visuals/numbats.png){.lightbox group="gallery" width="32%"} ![](images/visuals/soccer.png){.lightbox group="gallery" width="32%"}
 
+![](images/visuals/hot-ones.png){.lightbox group="gallery" width="50%"}
 </p>
 :::
